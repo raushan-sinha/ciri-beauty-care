@@ -218,3 +218,121 @@
         max-height: 200px;
     }
 }
+
+/* ===== Product Section ===== */
+.products-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.products-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #e80061;
+}
+
+/* Grid Layout */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.product-card-image {
+    width: 100%;
+    max-height: 180px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.product-card-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablets (Portrait & Landscape) */
+@media (max-width: 1024px) {
+    .products-title {
+        font-size: 1.8rem;
+    }
+
+    .product-card-image {
+        max-height: 200px;
+    }
+}
+
+/* Mobiles (Portrait & Landscape) */
+@media (max-width: 768px) {
+    .products-title {
+        font-size: 1.5rem;
+    }
+
+    .products-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .product-card {
+        padding: 0.8rem;
+    }
+
+    .product-card-image {
+        max-height: 180px;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .product-card-name {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Mobiles (Portrait & Landscape) */
+@media (max-width: 480px) {
+    .products-title {
+        font-size: 1.5rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .product-card-image {
+        max-height: 160px;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .product-card-name {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small (very narrow devices, 320px and below) */
+@media (max-width: 360px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card-image {
+        max-height: 200px;
+    }
+}

@@ -1,5 +1,5 @@
 import './Home.css';
-// import homeProduct from '../data/homeProductsData';
+import homeProduct from '../data/homeProductsData';
 
 export default function Home() {
     //todo: Banner Content -
@@ -53,6 +53,23 @@ export default function Home() {
                     }
                 </div>
             </div>
+
+            {/* Products Section */}
+            {
+                homeProduct.map((item, idx) => (
+                    <section className="products-section" key={idx}>
+                        <h2 className="products-title">{item.title}</h2>
+                        <div className="products-grid">
+                            {item.products.map((product, i) => (
+                                <div className="product-card" key={i}>
+                                    <img src={product.src} alt={product.alt} className="product-card-image" />
+                                    <p className="product-card-name">{product.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                ))
+            }
         </>
     );
 }
