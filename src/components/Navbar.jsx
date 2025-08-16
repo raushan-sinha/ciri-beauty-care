@@ -16,7 +16,7 @@ export default function Navbar() {
     };
 
     //todo: Logo
-    const logo = 'CiriBeautyCare';
+    const logo = 'Ciri-BeautyCare';
 
     //todo: Navbar Links
     const navLinks = [
