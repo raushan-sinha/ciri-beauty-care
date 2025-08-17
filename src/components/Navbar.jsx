@@ -48,6 +48,7 @@ export default function Navbar() {
                         <SearchIcon className="search-icon" />
                         <input
                             type="text"
+                            name="search"
                             placeholder="Search for products, brands..."
                         />
                         <PhotoCameraIcon className="camera-icon" />
@@ -73,6 +74,7 @@ export default function Navbar() {
                             <SearchIcon className="search-icon" />
                             <input
                                 type="text"
+                                name="search"
                                 placeholder="Search for products, brands..."
                             />
                             <PhotoCameraIcon className="camera-icon" />
