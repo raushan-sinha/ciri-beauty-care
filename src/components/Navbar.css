@@ -1,6 +1,6 @@
 /* ===== Navbar ===== */
 .navbar {
-    background: #f0d032;
+    background: #d9dd92;
     padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -40,8 +40,15 @@
 }
 
 /* ===== Desktop Navigation ===== */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-links a {
-    color: #e80071;
+    color: #c20f45;
     text-decoration: none;
     font: 600 1rem/1.5 sans-serif;
 }
@@ -143,7 +150,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #f0d032;
+    background: #d9dd92;
     border-top: 1px solid #ddd;
     padding: 10px 20px;
     justify-content: space-around;
@@ -194,6 +201,6 @@
 
     .footer-icon,
     .footer-navbar span {
-        color: #e80071;
+        color: #c20f45;
     }
 }
