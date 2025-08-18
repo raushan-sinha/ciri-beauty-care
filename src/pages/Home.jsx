@@ -1,4 +1,5 @@
 import './Home.css';
+import Navbar from '../components/Navbar';
 import homeProduct from '../data/homeProductsData';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
 
     return (
         <>
+            <Navbar />
             <div className="banner">
                 {/* Banner Content */}
                 {

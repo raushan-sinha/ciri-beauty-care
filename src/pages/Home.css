@@ -110,10 +110,15 @@
 /* Landscape Orientation */
 @media (orientation: landscape) {
     .banner {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
         padding: 2rem;
+
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem; */
     }
 
     .banner-content {

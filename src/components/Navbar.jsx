@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./Navbar.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -37,9 +38,9 @@ export default function Navbar() {
                     {/* Desktop Nav Links */}
                     <nav className="nav-links desktop-nav">
                         {navLinks.map((link, idx) => (
-                            <a key={idx} href={link.href}>
+                            <Link key={idx} to={link.href}>
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
                     </nav>
 
