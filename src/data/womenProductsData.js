@@ -1,4 +1,3 @@
-
 const womenProducts = [
     {
         id: 1,
