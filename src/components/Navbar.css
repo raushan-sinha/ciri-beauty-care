@@ -152,7 +152,7 @@
     width: 100%;
     background: #d9dd92;
     border-top: 1px solid #ddd;
-    padding: 10px 20px;
+    padding: 10px 10px;
     justify-content: space-around;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
 }
