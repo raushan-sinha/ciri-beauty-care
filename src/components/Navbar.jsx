@@ -8,7 +8,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import MicNoneIcon from '@mui/icons-material/MicNone';
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import SettingsIcon from '@mui/icons-material/Settings';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +25,7 @@ export default function Navbar() {
         { href: "/women", name: "Women" },
         { href: "/men", name: "Men" },
         { href: "/brands", name: "All Brands" }, 
-        { href: "/more", name: "More" },
+        { href: "/settings", name: "Settings" },
     ];
 
     return (
@@ -99,10 +98,6 @@ export default function Navbar() {
                 <div>
                     <FavoriteBorderIcon className="footer-icon" />
                     <span>Wishlist</span>
-                </div>
-                <div>
-                    <SettingsIcon className="footer-icon" />
-                    <span>Settings</span>
                 </div>
                 <div>
                     <AccountCircleIcon className="footer-icon" />

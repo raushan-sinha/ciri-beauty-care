@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    white-space: nowrap;
 }
 
 .navbar-container {
@@ -19,7 +20,7 @@
 /* ===== Logo ===== */
 .logo {
     font-family: "Poppins", Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #e80071;
     cursor: pointer;
@@ -61,7 +62,8 @@
 
 .desktop-nav {
     display: flex;
-    gap: 0.8rem;
+    gap: 1.3rem;
+    padding: 10px 20px;
 }
 
 /* ===== Search Bar ===== */
@@ -96,7 +98,8 @@
 .mobile-icons {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.2rem;
+    padding: 5px 10px;
 }
 
 .icons svg,
@@ -190,7 +193,7 @@
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .search-bar input {
