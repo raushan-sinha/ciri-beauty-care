@@ -1,54 +1,19 @@
 import Navbar from '../components/Navbar';
 import './WomenPage.css';
+import womenProducts from '../data/womenProductsData';
 
 export default function WomenPage() {
-    const beautyProducts = [
-        {
-            id: 1,
-            name: "Hydrating Facewash",
-            price: "₹299",
-            image: "https://via.placeholder.com/250x300.png?text=Facewash",
-        },
-        {
-            id: 2,
-            name: "Brightening Face Cream",
-            price: "₹499",
-            image: "https://via.placeholder.com/250x300.png?text=Face+Cream",
-        },
-        {
-            id: 3,
-            name: "SPF 50 Sunscreen",
-            price: "₹399",
-            image: "https://via.placeholder.com/250x300.png?text=Sunscreen",
-        },
-        {
-            id: 4,
-            name: "Aloe Vera Gel",
-            price: "₹199",
-            image: "https://via.placeholder.com/250x300.png?text=Aloe+Gel",
-        },
-        {
-            id: 5,
-            name: "Night Repair Cream",
-            price: "₹699",
-            image: "https://via.placeholder.com/250x300.png?text=Night+Cream",
-        },
-        {
-            id: 6,
-            name: "Vitamin C Serum",
-            price: "₹899",
-            image: "https://via.placeholder.com/250x300.png?text=Vitamin+C+Serum",
-        },
-    ];
+    //todo: Page Title - 
+    const title = 'Women Beauty Care';
 
     return (
         <>
             <Navbar />
 
             <section className="beauty-section">
-                <h1 className="section-title">Women Beauty Care</h1>
+                <h1 className="section-title">{title}</h1>
                 <div className="beauty-grid">
-                    {beautyProducts.map((product) => (
+                    {womenProducts.map((product) => (
                         <div className="beauty-card" key={product.id}>
                             <div className="image-wrapper">
                                 <img

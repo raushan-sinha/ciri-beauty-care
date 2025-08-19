@@ -1,30 +1,3 @@
-
-// const homeProductData = [
-//     {
-//         title: 'Our Products'
-//     },
-//     {
-//         src: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/529309106_4057294854536441_8575214502151550755_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ZHi8ZOi1K3sQ7kNvwE2CYPs&_nc_oc=Adlj2SAdEYC8FeOKDA3nLlFEwG2-gmRPKk4ftGPSKj0Ejo-eEpEQFcHKagOBRZhbj4g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD3AEriAX5EJ8g7C3Jr-QAhsWbGLUAFxTJy_gbJyTKXyZvig&oe=68C7BDFE',
-//         alt: 'product-1',
-//         name: 'Hair Dryer'
-//     },
-//     {
-//         src: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/530565064_4218175898507987_2640535089489766923_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=OCK4l0gfiCcQ7kNvwEaS164&_nc_oc=AdlUWy1mNK2GQ34XNTyAHTXguW45UlDn1P4_6iprShvg9qrN_yJb2EnmPbmgxdtb0ug&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD3AENvs8_rP2SM0PTzQp3heOXaMUsKoBGPHxBGy2ZpLjpbg&oe=68C7BC60',
-//         alt: 'product-2',
-//         name: 'Face Wash'
-//     },
-//     {
-//         src: 'https://scontent.fpat2-1.fna.fbcdn.net/v/t1.15752-9/530210261_760793356670722_1503239988339937436_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ylBVqNz-8JkQ7kNvwGC7YyF&_nc_oc=AdlDOrITsilaWlNI1uFREUeLUopJniYLlBmd9DP9EO79TL8uhmGyFTvEvLKa7S7s_wA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&oh=03_Q7cD3AEfOYckQP2vomGAlpxnmyKeowFZbyoESBKcW12vouBafA&oe=68C7C3D7',
-//         alt: 'product-3',
-//         name: 'Streax'
-//     },
-// ];
-
-// export default homeProductData;
-
-
-// homeProduct.js
-
 const homeProduct = [
     {
         title: "Beauty Care Products",
