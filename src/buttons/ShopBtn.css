@@ -1,0 +1,19 @@
+.btn-shop {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-shop {
+    background: #fff;
+    border: 1px solid #101923;
+    color: #f3268d;
+
+    &:hover {
+        background: #101923;
+        color: #fff;
+    }
+}

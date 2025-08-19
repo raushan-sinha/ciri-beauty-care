@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar';
 import './WomenPage.css';
 import womenProducts from '../data/womenProductsData';
+import AddCartBtn from '../buttons/AddCartBtn';
+import ShopBtn from '../buttons/ShopBtn';
 
 export default function WomenPage() {
     //todo: Page Title - 
@@ -25,8 +27,8 @@ export default function WomenPage() {
                             <h3 className="beauty-name">{product.name}</h3>
                             <p className="beauty-price">{product.price}</p>
                             <div className="beauty-actions">
-                                <button className="btn-cart">Add to Cart</button>
-                                <button className="btn-shop">Shop Now</button>
+                                <AddCartBtn />
+                                <ShopBtn />
                             </div>
                         </div>
                     ))}
