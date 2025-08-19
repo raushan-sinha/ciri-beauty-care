@@ -5,7 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchIcon from "@mui/icons-material/Search";
-import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import MicNoneIcon from '@mui/icons-material/MicNone';
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -52,7 +52,7 @@ export default function Navbar() {
                             name="search"
                             placeholder="Search for products, brands..."
                         />
-                        <PhotoCameraIcon className="camera-icon" />
+                        <MicNoneIcon className="camera-icon" />
                     </div>
 
                     {/* Desktop Icons */}
@@ -78,7 +78,7 @@ export default function Navbar() {
                                 name="search"
                                 placeholder="Search for products, brands..."
                             />
-                            <PhotoCameraIcon className="camera-icon" />
+                            <MicNoneIcon className="camera-icon" />
                         </div>
                         {navLinks.map((link, idx) => (
                             <a key={idx} href={link.href}>
