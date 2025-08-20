@@ -7,6 +7,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import MicNoneIcon from '@mui/icons-material/MicNone';
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import StorefrontSharpIcon from '@mui/icons-material/StorefrontSharp';
+import Tooltip from '@mui/material/Tooltip';
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -21,13 +23,13 @@ export default function Navbar() {
         { href: "/women", name: "Women" },
         { href: "/men", name: "Men" },
         { href: "/brands", name: "All Brands" },
-        { href: "/more", name: "More" },
+        { href: "/glowgear", name: "GlowGear" },
     ];
 
-    const footerItems = [
-        { icon: <ShoppingCartIcon className="footer-icon" />, label: "Cart" },
-        { icon: <FavoriteBorderIcon className="footer-icon" />, label: "Wishlist" },
-        { icon: <AccountCircleIcon className="footer-icon" />, label: "Account" }
+    const navLinkPhoneIcons = [
+        { icon: <AccountCircleIcon className="navLink-icon" />, label: "Account" },
+        { icon: <ShoppingCartIcon className="navLink-icon" />, label: "Cart" },
+        { icon: <StorefrontSharpIcon className="navLink-icon" />, label: "Supplier" } 
     ];
 
     return (
@@ -56,9 +58,56 @@ export default function Navbar() {
 
                     {/* Desktop Icons */}
                     <div className="icons desktop-icons">
-                        <AccountCircleIcon />
-                        <FavoriteBorderIcon />
-                        <ShoppingCartIcon />
+                        <Tooltip
+                            title="User Account"
+                            arrow
+                            slotProps={{
+                                tooltip: {
+                                    sx: {
+                                        backgroundColor: '#1e90ff',
+                                        color: "#101923",
+                                        fontSize: '12px',
+                                        fontWeight: '600'
+                                    },
+                                },
+                            }}
+                        >
+                            <AccountCircleIcon />
+                        </Tooltip>
+
+                        <Tooltip
+                            title="Cart"
+                            arrow
+                            slotProps={{
+                                tooltip: {
+                                    sx: {
+                                        backgroundColor: '#1e90ff',
+                                        color: "#101923",
+                                        fontSize: '12px',
+                                        fontWeight: '600'
+                                    },
+                                },
+                            }}
+                        >
+                            <ShoppingCartIcon />
+                        </Tooltip>
+
+                        <Tooltip
+                            title="Supplier"
+                            arrow
+                            slotProps={{
+                                tooltip: {
+                                    sx: {
+                                        backgroundColor: '#1e90ff',
+                                        color: "#101923",
+                                        fontSize: '12px',
+                                        fontWeight: '600'
+                                    },
+                                },
+                            }}
+                        >
+                            <StorefrontSharpIcon />
+                        </Tooltip>
                     </div>
 
                     {/* Mobile Hamburger */}
@@ -84,21 +133,19 @@ export default function Navbar() {
                                     {link.name}
                                 </a>
                             ))}
+
+                            <div className="navLink-icons">
+                                {navLinkPhoneIcons.map((item, index) => (
+                                    <div key={index}>
+                                        {item.icon}
+                                        <span>{item.label}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </nav>
                     </>
                 }
             </header>
-
-            {/* Footer Navbar - Mobile/Tablet */}
-            <div className="footer-navbar">
-                {footerItems.map((item, index) => (
-                    <div key={index}>
-                        {item.icon}
-
-                        <span>{item.label}</span>
-                    </div>
-                ))}
-            </div>
         </>
     );
 }
