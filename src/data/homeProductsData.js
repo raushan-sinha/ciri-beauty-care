@@ -26,6 +26,21 @@ const homeProduct = [
                 src: 'https://scontent.fpat2-5.fna.fbcdn.net/v/t1.15752-9/530482942_728540376846757_363502725759222297_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xu0X2fHGNYwQ7kNvwGi6M1G&_nc_oc=Adl5x3CVVMsXM3WmQmdgDT1NVpju9_gMoFLPPu-WgC7W1xXsJpaYdijoGbgSErjTzc4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-5.fna&oh=03_Q7cD3AH5wH61c7cIciIxFfQA_lwiVhtb8lOBnX_AZq70-ipKlg&oe=68C7EA0E',
                 alt: 'product-5',
                 name: 'Lakme Sunscreen'
+            },
+            {
+                src: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/532053041_752147141033439_7227636220634671079_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Pi4y1pVkG9wQ7kNvwGqTMul&_nc_oc=AdmuwbwPoJe7mo4H6c6hk9CeyiPlSuMhO8Wd2DN_T6I5Tnn_bp74lNekLo8O4ur2oDg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD3AFv9_Pz7k7XZqb7FHN5iRQnsWo7TedbQ5_Sk83i-CZ-cg&oe=68CD2168',
+                alt: 'product-7',
+                name: 'Facial Steamer'
+            },
+            {
+                src: 'https://scontent.fpat2-4.fna.fbcdn.net/v/t1.15752-9/532145344_2958903190986682_5131870051897584968_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zYJO0M7r8kkQ7kNvwHzmWcL&_nc_oc=AdkWZOeWfImKRdgqImXpFyghJ74wjSy_luU32qVu7zKuSqB0yGA96GbAyHi7ipPC_w8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-4.fna&oh=03_Q7cD3AHeG-NHR6659xiqoDokC2eoblZs_Z5tz7IW86m8JXejzg&oe=68CD312F',
+                alt: 'product-8',
+                name: 'Derma Roller'
+            },
+            {
+                src: 'https://scontent.fpat2-1.fna.fbcdn.net/v/t1.15752-9/536153820_1104745584951382_2587578429748357428_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MxDqpSOqbP4Q7kNvwENZT67&_nc_oc=AdmtMblazggUdMCP0DKv0mu5stR7gKgWGCN-Qvx4fo88NmlB_x9AkH6TL3hmLJTdNxY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&oh=03_Q7cD3AH72v-R7QgGQa7BDNzqaEPMlsmfEUWYeCy2kef0lUW5IA&oe=68CD2B40',
+                alt: 'product-9',
+                name: 'LED Skin Therapy Mask'
             }
         ]
     }
