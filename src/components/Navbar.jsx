@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -14,11 +14,18 @@ import "./Navbar.css";
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 768) setIsMenuOpen(false);
+        };
 
-    //todo: Nav links -
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+    // Nav links
     const navLinks = [
         { href: "/", name: "Home" },
         { href: "/women", name: "Women" },
@@ -27,14 +34,14 @@ export default function Navbar() {
         { href: "/glowgear", name: "GlowGear" },
     ];
 
-    //todo: Nav links for desktop icons -
+    // Desktop Nav Icons with tooltips
     const desktopNavIcons = [
-        { icon: <AccountCircleIcon /> },
-        { icon: <ShoppingCartIcon /> },
-        { icon: <StorefrontSharpIcon /> }
+        { icon: <AccountCircleIcon />, title: "User Account" },
+        { icon: <ShoppingCartIcon />, title: "Cart" },
+        { icon: <StorefrontSharpIcon />, title: "Supplier" }
     ];
 
-    //todo: Nav links for phone icons -
+    // Phone Nav Icons
     const navLinkPhoneIcons = [
         { icon: <AccountCircleIcon className="navLink-icon" />, label: "Account" },
         { icon: <ShoppingCartIcon className="navLink-icon" />, label: "Cart" },
@@ -42,89 +49,80 @@ export default function Navbar() {
     ];
 
     return (
-        <>
-            <header className="navbar">
-                <div className="navbar-container">
-                    <div className="logo">Ciri-BeautyCare</div>
+        <header className="navbar">
+            <div className="navbar-container">
+                <div className="logo">Ciri-BeautyCare</div>
 
-                    {/* Desktop Nav Links */}
-                    <nav className="nav-links desktop-nav">
-                        {navLinks.map((link, idx) => (
-                            <Link key={idx} to={link.href}>
-                                {link.name}
-                            </Link>
-                        ))}
-                    </nav>
+                {/* Desktop Nav Links */}
+                <nav className="nav-links desktop-nav">
+                    {navLinks.map((link, idx) => (
+                        <Link key={idx} to={link.href}>
+                            {link.name}
+                        </Link>
+                    ))}
+                </nav>
 
-                    {/* Desktop Search */}
-                    <div className="search-bar desktop-search">
-                        <SearchIcon className="search-icon" />
-
-                        <input type="text" name="search" placeholder="Search for products, brands..." />
-
-                        <MicNoneIcon className="camera-icon" />
-                    </div>
-
-                    {/* Desktop Icons */}
-                    {
-                        desktopNavIcons.map((icons, idx) => (
-                            <div className="icons desktop-icons" key={idx}>
-                                <Tooltip
-                                    title="User Account"
-                                    arrow
-                                    slotProps={{
-                                        tooltip: {
-                                            sx: {
-                                                backgroundColor: '#1e90ff',
-                                                color: "#101923",
-                                                fontSize: '14px',
-                                                fontWeight: '600'
-                                            },
-                                        },
-                                    }}
-                                >
-                                    {icons.icon}
-                                </Tooltip>
-                            </div>
-                        ))
-                    }
-
-                    {/* Mobile Hamburger */}
-                    <div className="mobile-menu-icon" onClick={toggleMenu}>
-                        {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
-                    </div>
+                {/* Desktop Search */}
+                <div className="search-bar desktop-search">
+                    <SearchIcon className="search-icon" />
+                    <input type="text" name="search" placeholder="Search for products, brands..." />
+                    <MicNoneIcon className="mic-icon" />
                 </div>
 
-                {/* Mobile Menu (Only opens when clicked) */}
-                {isMenuOpen &&
-                    <>
-                        <nav className="mobile-nav">
-                            <div className="search-bar">
-                                <SearchIcon className="search-icon" />
+                {/* Desktop Icons with Tooltips */}
+                <div className="icons desktop-icons">
+                    {desktopNavIcons.map((item, idx) => (
+                        <Tooltip
+                            key={idx}
+                            title={item.title}
+                            arrow
+                            slotProps={{
+                                tooltip: {
+                                    sx: {
+                                        backgroundColor: '#1e90ff',
+                                        color: "#101923",
+                                        fontSize: '14px',
+                                        fontWeight: '600'
+                                    },
+                                },
+                            }}
+                        >
+                            {item.icon}
+                        </Tooltip>
+                    ))}
+                </div>
 
-                                <input type="text" name="search" placeholder="Search for products, brands..." />
+                {/* Mobile Hamburger */}
+                <div className="mobile-menu-icon" onClick={toggleMenu}>
+                    {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
+                </div>
+            </div>
 
-                                <MicNoneIcon className="camera-icon" />
+            {/* Mobile Menu */}
+            {isMenuOpen && (
+                <nav className="mobile-nav">
+                    <div className="search-bar">
+                        <SearchIcon className="search-icon" />
+                        <input type="text" name="search" placeholder="Search for products, brands..." />
+                        <MicNoneIcon className="mic-icon" />
+                    </div>
+
+                    {navLinks.map((link, idx) => (
+                        <Link key={idx} to={link.href}>
+                            {link.name}
+                        </Link>
+                    ))}
+
+                    <div className="navLink-icons">
+                        {navLinkPhoneIcons.map((item, index) => (
+                            <div key={index}>
+                                {item.icon}
+                                <span>{item.label}</span>
                             </div>
-
-                            {navLinks.map((link, idx) => (
-                                <a key={idx} href={link.href}>
-                                    {link.name}
-                                </a>
-                            ))}
-
-                            <div className="navLink-icons">
-                                {navLinkPhoneIcons.map((item, index) => (
-                                    <div key={index}>
-                                        {item.icon}
-                                        <span>{item.label}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </nav>
-                    </>
-                }
-            </header>
-        </>
+                        ))}
+                    </div>
+                </nav>
+            )}
+        </header>
     );
 }
