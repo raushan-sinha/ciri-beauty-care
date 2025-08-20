@@ -18,6 +18,7 @@ export default function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    //todo: Nav links -
     const navLinks = [
         { href: "/", name: "Home" },
         { href: "/women", name: "Women" },
@@ -26,10 +27,18 @@ export default function Navbar() {
         { href: "/glowgear", name: "GlowGear" },
     ];
 
+    //todo: Nav links for desktop icons -
+    const desktopNavIcons = [
+        { icon: <AccountCircleIcon /> },
+        { icon: <ShoppingCartIcon /> },
+        { icon: <StorefrontSharpIcon /> }
+    ];
+
+    //todo: Nav links for phone icons -
     const navLinkPhoneIcons = [
         { icon: <AccountCircleIcon className="navLink-icon" />, label: "Account" },
         { icon: <ShoppingCartIcon className="navLink-icon" />, label: "Cart" },
-        { icon: <StorefrontSharpIcon className="navLink-icon" />, label: "Supplier" } 
+        { icon: <StorefrontSharpIcon className="navLink-icon" />, label: "Supplier" }
     ];
 
     return (
@@ -57,58 +66,28 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Icons */}
-                    <div className="icons desktop-icons">
-                        <Tooltip
-                            title="User Account"
-                            arrow
-                            slotProps={{
-                                tooltip: {
-                                    sx: {
-                                        backgroundColor: '#1e90ff',
-                                        color: "#101923",
-                                        fontSize: '12px',
-                                        fontWeight: '600'
-                                    },
-                                },
-                            }}
-                        >
-                            <AccountCircleIcon />
-                        </Tooltip>
-
-                        <Tooltip
-                            title="Cart"
-                            arrow
-                            slotProps={{
-                                tooltip: {
-                                    sx: {
-                                        backgroundColor: '#1e90ff',
-                                        color: "#101923",
-                                        fontSize: '12px',
-                                        fontWeight: '600'
-                                    },
-                                },
-                            }}
-                        >
-                            <ShoppingCartIcon />
-                        </Tooltip>
-
-                        <Tooltip
-                            title="Supplier"
-                            arrow
-                            slotProps={{
-                                tooltip: {
-                                    sx: {
-                                        backgroundColor: '#1e90ff',
-                                        color: "#101923",
-                                        fontSize: '12px',
-                                        fontWeight: '600'
-                                    },
-                                },
-                            }}
-                        >
-                            <StorefrontSharpIcon />
-                        </Tooltip>
-                    </div>
+                    {
+                        desktopNavIcons.map((icons, idx) => (
+                            <div className="icons desktop-icons" key={idx}>
+                                <Tooltip
+                                    title="User Account"
+                                    arrow
+                                    slotProps={{
+                                        tooltip: {
+                                            sx: {
+                                                backgroundColor: '#1e90ff',
+                                                color: "#101923",
+                                                fontSize: '14px',
+                                                fontWeight: '600'
+                                            },
+                                        },
+                                    }}
+                                >
+                                    {icons.icon}
+                                </Tooltip>
+                            </div>
+                        ))
+                    }
 
                     {/* Mobile Hamburger */}
                     <div className="mobile-menu-icon" onClick={toggleMenu}>

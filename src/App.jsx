@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import WomenPage from "./pages/WomenPage";
 import MenPage from "./pages/MenPage";
 import BrandsPage from "./pages/BrandsPage";
+import GlowGear from "./pages/GlowGear";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/women" element={<WomenPage />} />
           <Route path='men' element={<MenPage />} />
           <Route path="/brands" element={<BrandsPage />} />
+          <Route path="/glowgear" element={<GlowGear />} />
         </Routes>
       </BrowserRouter>
     </>
