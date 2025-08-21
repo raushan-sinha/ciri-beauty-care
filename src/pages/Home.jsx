@@ -1,6 +1,7 @@
 import './Home.css';
 import Navbar from '../components/Navbar';
 import homeProduct from '../data/homeProductsData';
+import Footer from '../components/Footer';
 
 export default function Home() {
     //todo: Banner Content -
@@ -72,6 +73,8 @@ export default function Home() {
                     </section>
                 ))
             }
+
+            <Footer />
         </>
     );
 }

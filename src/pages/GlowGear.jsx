@@ -3,6 +3,7 @@ import glowGearProduct from '../data/glowGearProdsData.js';
 import Navbar from '../components/Navbar.jsx';
 import AddCartBtn from '../buttons/AddCartBtn.jsx';
 import ShopBtn from '../buttons/ShopBtn.jsx';
+import Footer from '../components/Footer';
 
 export default function GlowGear() {
     return (
@@ -37,6 +38,8 @@ export default function GlowGear() {
                     </div>
                 ))
             }
+
+            <Footer />
         </>
     );
 }

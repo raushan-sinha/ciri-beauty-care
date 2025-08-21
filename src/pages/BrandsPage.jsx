@@ -4,11 +4,12 @@ import menProducts from '../data/menProductsData';
 import womenProducts from '../data/womenProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
+import Footer from '../components/Footer';
 
 export default function BrandsPage() {
     //todo: Add a title for the Brands page -
     const pageTitle = "All Brands for CiriBeautyCare";
-    
+
     return (
         <>
             <Navbar />
@@ -52,6 +53,8 @@ export default function BrandsPage() {
                     ))}
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }

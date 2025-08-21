@@ -3,6 +3,7 @@ import './MenPage.css';
 import menProducts from '../data/menProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
+import Footer from '../components/Footer';
 
 export default function MenPage() {
     // Page Title
@@ -34,6 +35,8 @@ export default function MenPage() {
                     ))}
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }

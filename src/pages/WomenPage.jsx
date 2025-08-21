@@ -3,6 +3,7 @@ import './WomenPage.css';
 import womenProducts from '../data/womenProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
+import Footer from '../components/Footer';
 
 export default function WomenPage() {
     //todo: Page Title - 
@@ -34,6 +35,8 @@ export default function WomenPage() {
                     ))}
                 </div>
             </section>
+
+            <Footer />
         </>
     );
 }
