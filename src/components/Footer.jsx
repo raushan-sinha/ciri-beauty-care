@@ -56,7 +56,7 @@ export default function Footer() {
     ];
 
     //todo: Copyright
-    const copyRight = `© ${new Date().getFullYear()} GlowGear. All Rights Reserved.`;
+    const copyRight = `© ${new Date().getFullYear()} CiriBeautyCare. All Rights Reserved.`;
 
 
     return (
