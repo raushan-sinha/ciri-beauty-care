@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import EmailIcon from '@mui/icons-material/Email';
 import "./Footer.css";
-import { href } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     //todo: Footer - About
@@ -33,7 +33,7 @@ export default function Footer() {
         {
             title: 'Other Links',
             links: [
-                { href: '/about', title: 'About Us' },
+                { href: '/aboutus', title: 'About Us' },
                 { href: '/privacy', title: 'Privacy Policy' },
                 { href: '/terms', title: 'Terms & Conditions' },
                 { href: '/faq', title: 'FAQs' },
@@ -97,7 +97,7 @@ export default function Footer() {
                             {
                                 link.links.map((item, i) => (
                                     <ul className="footer-links" key={i}>
-                                        <li><a href={item.href}>{item.title}</a></li>
+                                        <li><Link to={item.href}>{item.title}</Link></li>
                                     </ul>
                                 ))
                             }

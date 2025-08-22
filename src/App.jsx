@@ -5,6 +5,7 @@ import WomenPage from "./pages/WomenPage";
 import MenPage from "./pages/MenPage";
 import BrandsPage from "./pages/BrandsPage";
 import GlowGear from "./pages/GlowGear";
+import AboutUs from "./footer-pages/AboutUs";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path='men' element={<MenPage />} />
           <Route path="/brands" element={<BrandsPage />} />
           <Route path="/glowgear" element={<GlowGear />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
     </>
