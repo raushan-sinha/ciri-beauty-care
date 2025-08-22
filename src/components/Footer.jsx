@@ -34,7 +34,7 @@ export default function Footer() {
             title: 'Other Links',
             links: [
                 { href: '/aboutus', title: 'About Us' },
-                { href: '/privacy', title: 'Privacy Policy' },
+                { href: '/privacypolicy', title: 'Privacy Policy' },
                 { href: '/terms', title: 'Terms & Conditions' },
                 { href: '/faq', title: 'FAQs' },
                 { href: '/support', title: 'Support' }
