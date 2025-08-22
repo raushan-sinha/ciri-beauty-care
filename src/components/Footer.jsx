@@ -35,7 +35,7 @@ export default function Footer() {
             links: [
                 { href: '/aboutus', title: 'About Us' },
                 { href: '/privacypolicy', title: 'Privacy Policy' },
-                { href: '/terms', title: 'Terms & Conditions' },
+                { href: '/termsconditions', title: 'Terms & Conditions' },
                 { href: '/faq', title: 'FAQs' },
                 { href: '/support', title: 'Support' }
             ]

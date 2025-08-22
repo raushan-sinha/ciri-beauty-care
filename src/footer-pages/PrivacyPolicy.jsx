@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
 
                             {
                                 info.subSections.map((item, i) => (
-                                    <div className="policy-section">
+                                    <div className="policy-section" key={i}>
                                         <h2>{item.title}</h2>
                                         <p>{item.text}</p>
                                     </div>

@@ -7,6 +7,8 @@ import BrandsPage from "./pages/BrandsPage";
 import GlowGear from "./pages/GlowGear";
 import AboutUs from "./footer-pages/AboutUs";
 import PrivacyPolicy from "./footer-pages/PrivacyPolicy";
+import Faq from "./footer-pages/Faq";
+import TermsConditions from "./footer-pages/TermsConditions";
 
 export default function App() {
 	return (
@@ -15,11 +17,13 @@ export default function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/women" element={<WomenPage />} />
-					<Route path='men' element={<MenPage />} />
+					<Route path="men" element={<MenPage />} />
 					<Route path="/brands" element={<BrandsPage />} />
 					<Route path="/glowgear" element={<GlowGear />} />
 					<Route path="/aboutus" element={<AboutUs />} />
 					<Route path="/privacypolicy" element={<PrivacyPolicy />} />
+					<Route path="/termsconditions" element={<TermsConditions />} />
+					<Route path="/faq" element={<Faq />} />
 				</Routes>
 			</BrowserRouter>
 		</>
