@@ -9,6 +9,7 @@ import AboutUs from "./footer-pages/AboutUs";
 import PrivacyPolicy from "./footer-pages/PrivacyPolicy";
 import Faq from "./footer-pages/Faq";
 import TermsConditions from "./footer-pages/TermsConditions";
+import Support from "./footer-pages/Support";
 
 export default function App() {
 	return (
@@ -24,6 +25,7 @@ export default function App() {
 					<Route path="/privacypolicy" element={<PrivacyPolicy />} />
 					<Route path="/termsconditions" element={<TermsConditions />} />
 					<Route path="/faq" element={<Faq />} />
+					<Route path="/support" element={<Support />} />
 				</Routes>
 			</BrowserRouter>
 		</>
