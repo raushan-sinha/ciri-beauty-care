@@ -11,6 +11,7 @@ import Faq from "./footer-pages/Faq";
 import TermsConditions from "./footer-pages/TermsConditions";
 import Support from "./footer-pages/Support";
 import Cart from "./pages/Cart";
+import Supplier from "./pages/Supplier";
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
 					<Route path="/faq" element={<Faq />} />
 					<Route path="/support" element={<Support />} />
 					<Route path="/cart" element={<Cart />} />
+					<Route path="/supplier" element={<Supplier />} />
 				</Routes>
 			</BrowserRouter>
 		</>
