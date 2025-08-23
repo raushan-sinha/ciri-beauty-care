@@ -22,17 +22,14 @@ export default function SupplierPage() {
                     <h2>Seller Success Stories</h2>
                     <div className="stories-grid">
                         <div className="story-card">
-                            <img src="https://via.placeholder.com/150" alt="Seller 1" />
                             <h3>Priya Sharma</h3>
                             <p>Transformed her local skincare business into a nationwide brand using CiriBeautyCare.</p>
                         </div>
                         <div className="story-card">
-                            <img src="https://via.placeholder.com/150" alt="Seller 2" />
                             <h3>Ankit Verma</h3>
                             <p>Boosted sales by 4x by listing organic beauty products online.</p>
                         </div>
                         <div className="story-card">
-                            <img src="https://via.placeholder.com/150" alt="Seller 3" />
                             <h3>Neha Gupta</h3>
                             <p>Expanded her wellness store across India with CiriBeautyCare logistics support.</p>
                         </div>
