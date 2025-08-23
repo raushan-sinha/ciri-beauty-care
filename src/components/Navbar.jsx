@@ -9,9 +9,11 @@ import CloseIcon from "@mui/icons-material/Close";
 import StorefrontSharpIcon from '@mui/icons-material/StorefrontSharp';
 import Tooltip from '@mui/material/Tooltip';
 import "./Navbar.css";
+import AuthModal from "../authentication/AuthModal";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showAuthBox, setShowAuthBox] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -35,7 +37,7 @@ export default function Navbar() {
 
     // Desktop Nav Icons with tooltips
     const desktopNavIcons = [
-        { icon: <AccountCircleIcon />, title: "User Account" },
+        { icon: <AccountCircleIcon />, title: "User Account", onClick: () => setShowAuthBox(true) },
         { icon: <ShoppingCartIcon />, title: "Cart" },
         { icon: <StorefrontSharpIcon />, title: "Supplier" }
     ];
@@ -86,7 +88,9 @@ export default function Navbar() {
                                 },
                             }}
                         >
-                            {item.icon}
+                            <span onClick={() => setShowAuthBox(true)}>
+                                {item.icon}
+                            </span>
                         </Tooltip>
                     ))}
                 </div>
@@ -114,7 +118,7 @@ export default function Navbar() {
 
                     <div className="navLink-icons">
                         {navLinkPhoneIcons.map((item, index) => (
-                            <div key={index}>
+                            <div key={index} onClick={() => setShowAuthBox(true)}>
                                 {item.icon}
                                 <span>{item.label}</span>
                             </div>
@@ -122,6 +126,9 @@ export default function Navbar() {
                     </div>
                 </nav>
             )}
+
+            {/* Render Login/Signup modal */}
+            {showAuthBox && <AuthModal onClose={() => setShowAuthBox(false)} />}
         </header>
     );
 }

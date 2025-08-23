@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import WomenPage from "./pages/WomenPage";
@@ -12,6 +12,7 @@ import TermsConditions from "./footer-pages/TermsConditions";
 import Support from "./footer-pages/Support";
 
 export default function App() {
+
 	return (
 		<>
 			<BrowserRouter>
