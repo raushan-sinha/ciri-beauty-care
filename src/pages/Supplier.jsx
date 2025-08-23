@@ -89,7 +89,7 @@ export default function SupplierPage() {
                             "Men's Grooming", "Beauty Tools", "Organic Products", "Accessories"
                         ].map((category, idx) => (
                             <div key={idx} className="category-card">
-                                <img src="https://via.placeholder.com/100" alt={category} />
+                                {/* <img src="https://via.placeholder.com/100" alt={category} /> */}
                                 <p>Sell {category} Online</p>
                             </div>
                         ))}
