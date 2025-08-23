@@ -10,6 +10,7 @@ import PrivacyPolicy from "./footer-pages/PrivacyPolicy";
 import Faq from "./footer-pages/Faq";
 import TermsConditions from "./footer-pages/TermsConditions";
 import Support from "./footer-pages/Support";
+import Cart from "./pages/Cart";
 
 export default function App() {
 
@@ -27,6 +28,7 @@ export default function App() {
 					<Route path="/termsconditions" element={<TermsConditions />} />
 					<Route path="/faq" element={<Faq />} />
 					<Route path="/support" element={<Support />} />
+					<Route path="/cart" element={<Cart />} />
 				</Routes>
 			</BrowserRouter>
 		</>

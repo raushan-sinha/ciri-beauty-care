@@ -38,15 +38,15 @@ export default function Navbar() {
     // Desktop Nav Icons with tooltips
     const desktopNavIcons = [
         { icon: <AccountCircleIcon />, title: "User Account", onClick: () => setShowAuthBox(true) },
-        { icon: <ShoppingCartIcon />, title: "Cart" },
-        { icon: <StorefrontSharpIcon />, title: "Supplier" }
+        { icon: <ShoppingCartIcon />, title: "Cart", link: "/cart" },
+        { icon: <StorefrontSharpIcon />, title: "Supplier", link: "/supplier" }
     ];
 
     // Phone Nav Icons
     const navLinkPhoneIcons = [
-        { icon: <AccountCircleIcon className="navLink-icon" />, label: "Account" },
-        { icon: <ShoppingCartIcon className="navLink-icon" />, label: "Cart" },
-        { icon: <StorefrontSharpIcon className="navLink-icon" />, label: "Supplier" }
+        { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account" },
+        { icon: <ShoppingCartIcon className="navLink-icon" fontSize="large" />, title: "Cart", link: "/cart" },
+        { icon: <StorefrontSharpIcon className="navLink-icon" fontSize="large" />, title: "Supplier", link: "/supplier" }
     ];
 
     return (
@@ -88,9 +88,16 @@ export default function Navbar() {
                                 },
                             }}
                         >
-                            <span onClick={() => setShowAuthBox(true)}>
-                                {item.icon}
-                            </span>
+                            {
+                                item.link ? (
+                                    <Link to={item.link} >{item.icon}</Link>
+                                ) :
+                                    (
+                                        <span onClick={() => setShowAuthBox(true)}>
+                                            {item.icon}
+                                        </span>
+                                    )
+                            }
                         </Tooltip>
                     ))}
                 </div>
@@ -118,10 +125,15 @@ export default function Navbar() {
 
                     <div className="navLink-icons">
                         {navLinkPhoneIcons.map((item, index) => (
-                            <div key={index} onClick={() => setShowAuthBox(true)}>
-                                {item.icon}
-                                <span>{item.label}</span>
-                            </div>
+                            item.link ? (
+                                <Link key={index} to={item.link}>{item.icon}
+                                </Link>
+                            ) :
+                                (
+                                    <div key={index} onClick={() => setShowAuthBox(true)}>
+                                        {item.icon}
+                                    </div>
+                                )
                         ))}
                     </div>
                 </nav>
