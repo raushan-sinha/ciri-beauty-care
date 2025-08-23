@@ -1,9 +1,9 @@
 import React from "react";
-import "./AuthModal.css";
+import "./LoginForm.css";
 import AppleIcon from '@mui/icons-material/Apple';
 import GoogleIcon from '@mui/icons-material/Google';
 
-export default function AuthModal({ onClose }) {
+export default function LoginForm({ onClose }) {
     return (
         <div className="auth-modal">
             <div className="auth-box">

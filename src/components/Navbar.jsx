@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import StorefrontSharpIcon from '@mui/icons-material/StorefrontSharp';
 import Tooltip from '@mui/material/Tooltip';
 import "./Navbar.css";
-import AuthModal from "../authentication/AuthModal";
+import LoginForm from "../authentication/LoginForm";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -128,7 +128,7 @@ export default function Navbar() {
             )}
 
             {/* Render Login/Signup modal */}
-            {showAuthBox && <AuthModal onClose={() => setShowAuthBox(false)} />}
+            {showAuthBox && <LoginForm onClose={() => setShowAuthBox(false)} />}
         </header>
     );
 }
