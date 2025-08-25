@@ -1,0 +1,114 @@
+.signup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.signup-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.signup-box h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.google-btn,
+.apple-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #101923;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.signup-form input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.create-btn {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #ff6f61;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    background: #ff4b3e;
+}
+
+@media (max-width: 768px) {
+    .signup-box {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-box {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .social-signup {
+        gap: 0.3rem;
+    }
+
+    .create-btn {
+        font-size: 0.9rem;
+    }
+}

@@ -2,6 +2,8 @@ import React from "react";
 import "./LoginForm.css";
 import AppleIcon from '@mui/icons-material/Apple';
 import GoogleIcon from '@mui/icons-material/Google';
+import SignUp from "./SignUp";
+import { Link } from "react-router-dom";
 
 export default function LoginForm({ onClose }) {
     return (
@@ -20,7 +22,7 @@ export default function LoginForm({ onClose }) {
                 </div>
 
                 <div className="auth-links">
-                    <span>Don't have an account? <a href="#">Sign Up</a></span>
+                    <span>Don't have an account? <Link to="/signup">Sign Up</Link></span>
                     <span><a href="#">Forgot?</a></span>
                 </div>
             </div>

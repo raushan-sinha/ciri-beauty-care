@@ -13,6 +13,7 @@ import Support from "./footer-pages/Support";
 import Cart from "./pages/Cart";
 import Supplier from "./pages/Supplier";
 import SupplierAccount from "./authentication/SupplierAccount";
+import SignUp from "./authentication/SignUp";
 
 export default function App() {
 
@@ -33,6 +34,7 @@ export default function App() {
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/supplier" element={<Supplier />} />
 					<Route path="/supplierAccount" element={<SupplierAccount />} />
+					<Route path="/signup" element={<SignUp />} />
 				</Routes>
 			</BrowserRouter>
 		</>
