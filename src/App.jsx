@@ -12,6 +12,7 @@ import TermsConditions from "./footer-pages/TermsConditions";
 import Support from "./footer-pages/Support";
 import Cart from "./pages/Cart";
 import Supplier from "./pages/Supplier";
+import SupplierAccount from "./authentication/SupplierAccount";
 
 export default function App() {
 
@@ -31,6 +32,7 @@ export default function App() {
 					<Route path="/support" element={<Support />} />
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/supplier" element={<Supplier />} />
+					<Route path="/supplierAccount" element={<SupplierAccount />} />
 				</Routes>
 			</BrowserRouter>
 		</>

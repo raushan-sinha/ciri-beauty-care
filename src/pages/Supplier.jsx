@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Supplier.css";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SupplierAccount from "../authentication/SupplierAccount";
 
 export default function SupplierPage() {
+    const [showAccountBox, setShowAccountBox] = useState(false);
+
     return (
         <>
             <Navbar />
@@ -14,7 +17,8 @@ export default function SupplierPage() {
                 <section className="hero-section">
                     <h1>Become a CiriBeautyCare Seller</h1>
                     <p>Start selling your beauty and wellness products online with CiriBeautyCare</p>
-                    <Link to="/signup" className="btn-primary">Create Account</Link>
+                    <button className="btn-primary" onClick={() => setShowAccountBox(true)} >Create Account</button>
+                    {showAccountBox && <SupplierAccount onClose={() => setShowAccountBox(false)} />}
                 </section>
 
                 {/* Seller Success Stories */}
