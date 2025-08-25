@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SupplierAccount.css";
 
 export default function SupplierAccount({ onClose }) {
-
     return (
         <div className="supplier-container">
             <div className="supplier-box">
@@ -16,34 +15,65 @@ export default function SupplierAccount({ onClose }) {
                     Register as a trusted supplier with CiriBeautyCare
                 </p>
 
-                <form className="supplier-form">
+                <form
+                    className="supplier-form"
+                >
                     <div className="form-group">
-                        <label>Company Name</label>
+                        <label htmlFor="company-name">Company Name</label>
                         <input
                             type="text"
+                            id="company-name"
                             placeholder="Enter your company name"
+                            name="company-name"
+                            autoComplete="organization"
                             required
                         />
                     </div>
+
                     <div className="form-group">
-                        <label>Contact Person</label>
+                        <label htmlFor="username">Contact Person</label>
                         <input
                             type="text"
+                            id="username"
                             placeholder="Enter contact person name"
+                            name="username"
+                            autoComplete="name"
                             required
                         />
                     </div>
+
                     <div className="form-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="Enter email" required />
+                        <label htmlFor="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter email"
+                            name="email"
+                            autoComplete="email"
+                            required
+                        />
                     </div>
+
                     <div className="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" placeholder="Enter phone number" required />
+                        <label htmlFor="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            name="phone"
+                            autoComplete="tel"
+                            required
+                        />
                     </div>
+
                     <div className="form-group">
-                        <label>Business Category</label>
-                        <select required>
+                        <label htmlFor="category">Business Category</label>
+                        <select
+                            id="category"
+                            name="category"
+                            autoComplete="off"
+                            required
+                        >
                             <option value="">Select category</option>
                             <option>Skincare</option>
                             <option>Haircare</option>
@@ -52,18 +82,30 @@ export default function SupplierAccount({ onClose }) {
                             <option>Wellness</option>
                         </select>
                     </div>
+
                     <div className="form-group">
-                        <label>Business License / GST No.</label>
+                        <label htmlFor="license">Business License / GST No.</label>
                         <input
                             type="text"
+                            id="license"
                             placeholder="Enter registration number"
+                            name="license"
+                            autoComplete="off"
                             required
                         />
                     </div>
+
                     <div className="form-group">
-                        <label>Business Address</label>
-                        <textarea placeholder="Enter complete business address" required />
+                        <label htmlFor="address">Business Address</label>
+                        <textarea
+                            id="address"
+                            placeholder="Enter complete business address"
+                            name="address"
+                            autoComplete="street-address"
+                            required
+                        ></textarea>
                     </div>
+
                     <button type="submit" className="btn">
                         Create Account
                     </button>

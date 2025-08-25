@@ -117,6 +117,10 @@
 }
 
 @media (max-width: 480px) {
+    .supplier-container {
+        margin-top: 15%;
+    }
+
     .supplier-box h2 {
         font-size: 20px;
     }
