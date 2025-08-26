@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import "./Supplier.css";
+"use client"
+
+import { useState } from "react"
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import SupplierAccount from "../authentication/SupplierAccount";
+import "./supplier.css"
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { heroSection, successStories, quickSteps, helpSupport, categories } from "../data/suppliersData";
 
 export default function SupplierPage() {
-    const [showAccountBox, setShowAccountBox] = useState(false);
-
     return (
         <>
             <Navbar />
@@ -15,90 +15,107 @@ export default function SupplierPage() {
             <div className="supplier-page">
                 {/* Hero Section */}
                 <section className="hero-section">
-                    <h1>Become a CiriBeautyCare Seller</h1>
-                    <p>Start selling your beauty and wellness products online with CiriBeautyCare</p>
-                    <button className="btn-primary" onClick={() => setShowAccountBox(true)} >Create Account</button>
-                    {showAccountBox && <SupplierAccount onClose={() => setShowAccountBox(false)} />}
-                </section>
-
-                {/* Seller Success Stories */}
-                <section className="success-stories">
-                    <h2>Seller Success Stories</h2>
-                    <div className="stories-grid">
-                        <div className="story-card">
-                            <h3>Priya Sharma</h3>
-                            <p>Transformed her local skincare business into a nationwide brand using CiriBeautyCare.</p>
-                        </div>
-                        <div className="story-card">
-                            <h3>Ankit Verma</h3>
-                            <p>Boosted sales by 4x by listing organic beauty products online.</p>
-                        </div>
-                        <div className="story-card">
-                            <h3>Neha Gupta</h3>
-                            <p>Expanded her wellness store across India with CiriBeautyCare logistics support.</p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Quick Steps */}
-                <section className="quick-steps">
-                    <h2>Getting Started</h2>
-                    <div className="steps-grid">
-                        <div className="step-card">
-                            <h3>Create Account</h3>
-                            <p>Sign up quickly with minimal documents and start selling your products.</p>
-                        </div>
-                        <div className="step-card">
-                            <h3>List Products</h3>
-                            <p>Add product images, description, pricing, and categories for online visibility.</p>
-                        </div>
-                        <div className="step-card">
-                            <h3>Manage Inventory</h3>
-                            <p>Easily manage stock and storage with our intuitive dashboard.</p>
-                        </div>
-                        <div className="step-card">
-                            <h3>Receive Payments</h3>
-                            <p>Get your earnings safely transferred to your bank account in just 7 days.</p>
-                        </div>
-                        <div className="step-card">
-                            <h3>Grow Faster</h3>
-                            <p>Promote your products with ads, deals, and curated campaigns on CiriBeautyCare.</p>
-                        </div>
-                        <div className="step-card">
-                            <h3>Seller App</h3>
-                            <p>Track orders, manage listings, and connect with customers on the go.</p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Help & Support */}
-                <section className="help-support">
-                    <h2>Help & Support</h2>
-                    <p>
-                        Our dedicated team is here to assist you every step of the way.
-                        Download our step-by-step seller guide
-                        <Link to="/help"> here</Link>.
-                    </p>
-                </section>
-
-                {/* Popular Categories */}
-                <section className="categories">
-                    <h2>Popular Categories to Sell on CiriBeautyCare</h2>
-                    <div className="categories-grid">
-                        {[
-                            "Skincare", "Haircare", "Makeup", "Wellness", "Fragrances", "Body Care",
-                            "Men's Grooming", "Beauty Tools", "Organic Products", "Accessories"
-                        ].map((category, idx) => (
-                            <div key={idx} className="category-card">
-                                {/* <img src="https://via.placeholder.com/100" alt={category} /> */}
-                                <p>Sell {category} Online</p>
+                    {
+                        heroSection.map((item, idx) => (
+                            <div className="hero-container" key={idx}>
+                                <div className="hero-content">
+                                    <h1 className="hero-title">{item.title}</h1>
+                                    <p className="hero-description">{item.desc}</p>
+                                    <Link className="hero-button" to="/supplierAccount">{item.btn}</Link>
+                                </div>
+                                <div className="hero-image-container">
+                                    <img
+                                        src={item.imgSrc}
+                                        alt={item.alt}
+                                        className="hero-image"
+                                    />
+                                </div>
                             </div>
-                        ))}
-                    </div>
+                        ))
+                    }
                 </section>
+
+                <div className="main-container">
+                    {/* Seller Success Stories */}
+                    {
+                        successStories.map((story, idx) => (
+                            <section className="success-stories" key={idx}>
+                                <h2 className="section-title">{story.title}</h2>
+                                <div className="stories-grid">
+                                    {
+                                        story.stories.map((item, i) => (
+                                            <div className="story-card" key={i}>
+                                                <h3 className="story-name">{item.name}</h3>
+                                                <p className="story-text">{item.story}</p>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </section>
+                        ))
+                    }
+
+                    {/* Quick Steps */}
+                    {
+                        quickSteps.map((section, idx) => (
+                            <section className="getting-started" key={idx}>
+                                <h2 className="section-title">{section.heading}</h2>
+                                <div className="steps-grid">
+                                    {
+                                        section.steps.map((step, i) => (
+                                            <div className="step-card" key={i}>
+                                                <div className="step-number">{i + 1}</div>
+                                                <h3 className="step-title">{step.title}</h3>
+                                                <p className="step-description">{step.desc}</p>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </section>
+                        ))
+                    }
+
+                    {/* Help & Support */}
+                    {
+                        helpSupport.map((item, idx) => (
+                            <section className="help-support" key={idx}>
+                                <h2 className="section-title">{item.title}</h2>
+                                <p className="help-text">
+                                    {item.desc} {''}
+                                    <Link href="/help" className="help-link">
+                                        {item.linkName}
+                                    </Link>
+                                </p>
+                            </section>
+                        ))
+                    }
+
+                    {/* Popular Categories */}
+                    {
+                        categories.map((item, idx) => (
+                            <section className="categories-section" key={idx}>
+                                <h2 className="section-title">{item.title}</h2>
+                                <div className="categories-grid">
+                                    {
+                                        item.categoriesList.map((category, i) => (
+                                            <div className="category-card" key={i}>
+                                                <div className="category-image-container">
+                                                    <img src={category.imgSrc} alt={category.alt} className="category-image" />
+                                                </div>
+                                                <div className="category-content">
+                                                    <p className="category-name">Sell {category.name} Online</p>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </section>
+                        ))
+                    }
+                </div>
             </div>
 
             <Footer />
         </>
-    );
+    )
 }
