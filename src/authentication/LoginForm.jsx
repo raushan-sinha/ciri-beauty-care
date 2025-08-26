@@ -41,11 +41,11 @@ export default function LoginForm({ onClose }) {
 
                 {/* Social Login */}
                 <div className="social-login">
-                    <button type="button" className="google-btn">
+                    <button type="button" id="google-btn">
                         <GoogleIcon fontSize="medium" />
                     </button>
         
-                    <button type="button" className="apple-btn">
+                    <button type="button" id="apple-btn">
                         <AppleIcon fontSize="medium" />
                     </button>
                 </div>
@@ -56,7 +56,7 @@ export default function LoginForm({ onClose }) {
                         Don't have an account? <Link to="/signup">Sign Up</Link>
                     </span>
                     <span>
-                        <Link to="/forgot-password">Forgot Password?</Link>
+                        <Link to="/forgotPass">Forgot Password?</Link>
                     </span>
                 </div>
             </div>

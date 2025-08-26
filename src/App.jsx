@@ -14,6 +14,7 @@ import Cart from "./pages/Cart";
 import Supplier from "./pages/Supplier";
 import SupplierAccount from "./authentication/SupplierAccount";
 import SignUp from "./authentication/SignUp";
+import ForgotPassword from "./authentication/ForgotPassword";
 
 export default function App() {
 
@@ -35,6 +36,7 @@ export default function App() {
 					<Route path="/supplier" element={<Supplier />} />
 					<Route path="/supplierAccount" element={<SupplierAccount />} />
 					<Route path="/signup" element={<SignUp />} />
+					<Route path="/forgotPass" element={<ForgotPassword />} />
 				</Routes>
 			</BrowserRouter>
 		</>

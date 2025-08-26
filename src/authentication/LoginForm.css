@@ -122,8 +122,8 @@
     margin: 1.5rem 0;
 }
 
-.google-btn,
-.apple-btn {
+#google-btn,
+#apple-btn {
     flex: 1;
     padding: 0.875rem 1rem;
     border: 2px solid #e0e0e0;
