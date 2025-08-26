@@ -9,9 +9,9 @@ export default function LoginForm({ onClose }) {
         <div className="auth-modal">
             <div className="auth-box">
                 {/* Close Button */}
-                <button className="close-btn" onClick={onClose}>✖</button>
+                <button id="close-btn" onClick={onClose}>✖</button>
 
-                <h2>Login</h2>
+                <h2>Login for CiriBeautyCare</h2>
 
                 <form
                     className="login-form"
@@ -42,10 +42,11 @@ export default function LoginForm({ onClose }) {
                 {/* Social Login */}
                 <div className="social-login">
                     <button type="button" className="google-btn">
-                        <GoogleIcon fontSize="medium" /> Google
+                        <GoogleIcon fontSize="medium" />
                     </button>
+        
                     <button type="button" className="apple-btn">
-                        <AppleIcon fontSize="medium" /> Apple
+                        <AppleIcon fontSize="medium" />
                     </button>
                 </div>
 
