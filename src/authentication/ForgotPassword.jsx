@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ForgotPassword.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -10,18 +10,42 @@ export default function ForgotPassword() {
 
             <div className="forgot-container">
                 <div className="forgot-box">
-                    <button id="close-btn" onClick={() => window.history.back()}>✖</button>
+                    <button
+                        id="close-btn"
+                        type="button"
+                        aria-label="Close"
+                        onClick={() => window.history.back()}
+                    >
+                        ✖
+                    </button>
                     <h2>Forgot Password</h2>
+
                     <form>
-                        <label>Mobile Number</label>
-                        <input type="tel" placeholder="Enter mobile number" />
-                        <button type="button" className="otp-btn">Send OTP</button>
+                        {/* Phone input */}
+                        <label htmlFor="phone">Mobile Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter mobile number"
+                            autoComplete="tel"   // ✅ fixed
+                            required
+                        />
+                        <button type="submit" className="otp-btn">Send OTP</button>
 
                         <span className="or-text">OR</span>
 
-                        <label>Email Address</label>
-                        <input type="email" placeholder="Enter email address" />
-                        <button type="button" className="verify-btn">Verify Email</button>
+                        {/* Email input */}
+                        <label htmlFor="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            autoComplete="email"  // ✅ fixed
+                            required
+                        />
+                        <button type="submit" className="verify-btn">Verify Email</button>
                     </form>
                 </div>
             </div>
