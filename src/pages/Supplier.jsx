@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./supplier.css"
+import "./Supplier.css"
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { heroSection, successStories, quickSteps, helpSupport, categories } from "../data/suppliersData";
