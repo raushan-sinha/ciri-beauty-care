@@ -1,13 +1,17 @@
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import './MenPage.css';
 import menProducts from '../data/menProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
 import Footer from '../components/Footer';
+import MenPayCard from '../components/MenPayCard';
 
 export default function MenPage() {
-    // Page Title
+    //todo: Page Title
     const title = 'Men Beauty Care';
+
+    const [showPaymentBox, setShowPaymentBox] = useState(null)
 
     return (
         <>
@@ -29,7 +33,7 @@ export default function MenPage() {
                             <p className="beauty-price">{product.price}</p>
                             <div className="beauty-actions">
                                 <AddCartBtn />
-                                <ShopBtn />
+                                <ShopBtn onClick={() => setShowPaymentBox(product)} />
                             </div>
                         </div>
                     ))}
@@ -37,6 +41,15 @@ export default function MenPage() {
             </section>
 
             <Footer />
+            
+            {
+                showPaymentBox && (
+                    <MenPayCard
+                        product={showPaymentBox}
+                        onClose={() => setShowPaymentBox(null)}
+                    />
+                )
+            }
         </>
     );
 }
