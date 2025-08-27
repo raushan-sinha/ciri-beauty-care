@@ -1,5 +1,5 @@
 import React from "react";
-import "./BrandsPayCard.css";
+import "./PaymentCard.css";
 
 export default function BrandsPayCard({ product, onClose }) {
 
