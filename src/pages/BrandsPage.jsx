@@ -1,14 +1,21 @@
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import './MenPage.css';
+import './BrandsPage.css';
 import menProducts from '../data/menProductsData';
 import womenProducts from '../data/womenProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
 import Footer from '../components/Footer';
+import BrandsPayCard from '../components/BrandsPayCard';
 
 export default function BrandsPage() {
-    //todo: Add a title for the Brands page -
     const pageTitle = "All Brands for CiriBeautyCare";
+
+    // State for the currently selected product for payment
+    const [showPaymentBox, setShowPaymentBox] = useState(null);
+
+    // Combine women and men products in a single array
+    const allProducts = [...womenProducts, ...menProducts];
 
     return (
         <>
@@ -17,8 +24,8 @@ export default function BrandsPage() {
             <section className="beauty-section">
                 <h1 className="section-title">{pageTitle}</h1>
                 <div className="beauty-grid">
-                    {womenProducts.map((product) => (
-                        <div className="beauty-card" key={`women-${product.id}`}>
+                    {allProducts.map((product, index) => (
+                        <div className="beauty-card" key={`${product.id}-${index}`}>
                             <div className="image-wrapper">
                                 <img
                                     src={product.image}
@@ -30,29 +37,21 @@ export default function BrandsPage() {
                             <p className="beauty-price">{product.price}</p>
                             <div className="beauty-actions">
                                 <AddCartBtn />
-                                <ShopBtn />
-                            </div>
-                        </div>
-                    ))}
-                    {menProducts.map((product) => (
-                        <div className="beauty-card" key={`men-${product.id}`}>
-                            <div className="image-wrapper">
-                                <img
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="beauty-image"
-                                />
-                            </div>
-                            <h3 className="beauty-name">{product.name}</h3>
-                            <p className="beauty-price">{product.price}</p>
-                            <div className="beauty-actions">
-                                <AddCartBtn />
-                                <ShopBtn />
+                                {/* Shop button opens payment modal for this product */}
+                                <ShopBtn onClick={() => setShowPaymentBox(product)} />
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
+
+            {/* Payment Modal */}
+            {showPaymentBox && (
+                <BrandsPayCard
+                    product={showPaymentBox}
+                    onClose={() => setShowPaymentBox(null)}
+                />
+            )}
 
             <Footer />
         </>
