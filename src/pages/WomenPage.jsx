@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import './WomenPage.css';
 import womenProducts from '../data/womenProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
 import ShopBtn from '../buttons/ShopBtn';
 import Footer from '../components/Footer';
+import WomenPayCard from '../components/WomenPayCard';
 
 export default function WomenPage() {
-    //todo: Page Title - 
     const title = 'Women Beauty Care';
+
+    // Payment box state
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     return (
         <>
@@ -29,12 +33,19 @@ export default function WomenPage() {
                             <p className="beauty-price">{product.price}</p>
                             <div className="beauty-actions">
                                 <AddCartBtn />
-                                <ShopBtn />
+                                <ShopBtn onClick={() => setSelectedProduct(product)} />
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
+
+            {selectedProduct && (
+                <WomenPayCard
+                    product={selectedProduct}
+                    onClose={() => setSelectedProduct(null)}
+                />
+            )}
 
             <Footer />
         </>

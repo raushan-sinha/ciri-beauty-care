@@ -37,6 +37,7 @@ export default function App() {
 					<Route path="/supplierAccount" element={<SupplierAccount />} />
 					<Route path="/signup" element={<SignUp />} />
 					<Route path="/forgotPass" element={<ForgotPassword />} />
+					
 				</Routes>
 			</BrowserRouter>
 		</>
