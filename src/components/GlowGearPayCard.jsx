@@ -20,7 +20,7 @@ export default function GlowGearPayCard({ product, onClose }) {
                 {/* Product Details */}
                 <div className="product-info">
                     <img
-                        src={product.image}
+                        src={product.src}
                         alt={product.name}
                         className="product-img"
                     />
