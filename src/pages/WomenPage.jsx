@@ -18,7 +18,7 @@ export default function WomenPage() {
             <Navbar />
 
             <section className="beauty-section">
-                <h1 className="section-title">{title}</h1>
+                <h1 className="page-title">{title}</h1>
                 <div className="beauty-grid">
                     {womenProducts.map((product) => (
                         <div className="beauty-card" key={product.id}>
