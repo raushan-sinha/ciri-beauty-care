@@ -1,11 +1,15 @@
+import React, { useState } from 'react';
 import './GlowGear.css';
 import glowGearProduct from '../data/glowGearProdsData.js';
 import Navbar from '../components/Navbar.jsx';
 import AddCartBtn from '../buttons/AddCartBtn.jsx';
 import ShopBtn from '../buttons/ShopBtn.jsx';
 import Footer from '../components/Footer';
+import GlowGearPayCard from '../components/GlowGearPayCard.jsx';
 
 export default function GlowGear() {
+    const [showPaymentBox, setShowPaymentBox] = useState(null)
+
     return (
         <>
             <Navbar />
@@ -29,7 +33,7 @@ export default function GlowGear() {
                                         <p className="product-price">{product.price}</p>
                                         <div className="btn-group">
                                             <AddCartBtn />
-                                            <ShopBtn />
+                                            <ShopBtn onClick={() => setShowPaymentBox(product)} />
                                         </div>
                                     </div>
                                 ))
@@ -40,6 +44,15 @@ export default function GlowGear() {
             }
 
             <Footer />
+
+            {
+                showPaymentBox && (
+                    <GlowGearPayCard
+                        product={showPaymentBox}
+                        onClose={() => setShowPaymentBox(null)}
+                    />
+                )
+            }
         </>
     );
 }
