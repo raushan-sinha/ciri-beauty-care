@@ -19,8 +19,10 @@ export default function LoginForm({ onClose }) {
                     <div className="form-group">
                         <input
                             type="email"
-                            placeholder="Email"
+                            id="loginEmail"
                             name="email"
+                            placeholder="Email"
+                            aria-label="Email"
                             autoComplete="email"
                             required
                         />
@@ -29,13 +31,14 @@ export default function LoginForm({ onClose }) {
                     <div className="form-group">
                         <input
                             type="password"
-                            placeholder="Password"
+                            id="loginPassword"
                             name="password"
+                            placeholder="Password"
+                            aria-label="Password"
                             autoComplete="current-password"
                             required
                         />
                     </div>
-
                     <button type="submit" className="login-btn">Login</button>
                 </form>
 
@@ -44,7 +47,7 @@ export default function LoginForm({ onClose }) {
                     <button type="button" id="google-btn">
                         <GoogleIcon fontSize="medium" />
                     </button>
-        
+
                     <button type="button" id="apple-btn">
                         <AppleIcon fontSize="medium" />
                     </button>

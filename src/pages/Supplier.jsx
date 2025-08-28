@@ -79,7 +79,7 @@ export default function SupplierPage() {
                                 <h2 className="section-title">{item.title}</h2>
                                 <p className="help-text">
                                     {item.desc} {''}
-                                    <Link href="/help" className="help-link">
+                                    <Link to="/helpSupport" className="help-link">
                                         {item.linkName}
                                     </Link>
                                 </p>

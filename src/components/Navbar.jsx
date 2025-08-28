@@ -66,7 +66,14 @@ export default function Navbar() {
                 {/* Desktop Search */}
                 <div className="search-bar desktop-search">
                     <SearchIcon className="search-icon" />
-                    <input type="text" name="search" placeholder="Search for products, brands..." />
+                    <input
+                        type="text"
+                        id="searchInput"
+                        name="search"
+                        placeholder="Search for products, brands..."
+                        aria-label="Search for products or brands"
+                        autoComplete="off"
+                    />
                     <MicNoneIcon className="mic-icon" />
                 </div>
 

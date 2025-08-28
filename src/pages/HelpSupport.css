@@ -1,0 +1,205 @@
+/* ===== Page Base ===== */
+.help-support {
+    padding: 2rem;
+    background: linear-gradient(135deg, #fff5f7, #f9f9ff);
+    color: #333;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.help-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.help-header h1 {
+    font-size: 2.3rem;
+    color: #c2185b;
+    margin-bottom: 0.8rem;
+}
+
+.help-header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.help-header span {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+/* ===== Grid Layout for Contact Options ===== */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.support-card {
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.support-card h2 {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+    color: #c2185b;
+}
+
+.support-card p,
+.support-card li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.support-card ul {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.support-link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-weight: bold;
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Icons Styling ===== */
+.support-icon {
+    font-size: 2.5rem !important;
+    color: #e91e63;
+    margin-bottom: 0.5rem;
+}
+
+.support-icon.small {
+    font-size: 1.3rem !important;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.support-detail {
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #222;
+}
+
+.support-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===== Support Form ===== */
+.support-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+}
+
+.support-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #c2185b;
+    text-align: center;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+    padding: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-form input:focus,
+.support-form select:focus,
+.support-form textarea:focus {
+    border: 1px solid #c2185b;
+    box-shadow: 0 0 6px rgba(194, 24, 91, 0.3);
+}
+
+.support-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.support-form button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e91e63, #c2185b);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.support-form button:hover {
+    background: linear-gradient(135deg, #c2185b, #a3154b);
+    transform: scale(1.02);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .help-header h1 {
+        font-size: 2rem;
+    }
+
+    .support-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .help-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .support-card {
+        padding: 1.2rem;
+    }
+
+    .support-form input,
+    .support-form select,
+    .support-form textarea {
+        font-size: 0.95rem;
+    }
+
+    .support-form button {
+        font-size: 0.95rem;
+    }
+}

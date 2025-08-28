@@ -47,6 +47,7 @@
     color: #e61616;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, color 0.3s;
+    text-align: start;
 }
 
 .banner-title:hover {
