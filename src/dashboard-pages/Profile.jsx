@@ -64,7 +64,7 @@ export default function Profile() {
                             <div className="profile-card" key={idx}>
                                 <h3>{card.title}</h3>
                                 <p>{card.para}</p>
-                                <Link className="btn" to="/order">{card.btn}</Link>
+                                <Link className="btn" to={card.src}>{card.btn}</Link>
                             </div>
                         ))
                     }

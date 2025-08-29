@@ -10,6 +10,7 @@ export const accDashboard = {
         {
             title: 'Wishlists',
             para: 'See your saved products here.',
+            src: '/wishlist',
             btn: 'View Wishlist'
         },
         {
