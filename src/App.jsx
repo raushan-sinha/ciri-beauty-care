@@ -16,6 +16,7 @@ import SupplierAccount from "./authentication/SupplierAccount";
 import SignUp from "./authentication/SignUp";
 import ForgotPassword from "./authentication/ForgotPassword";
 import HelpSupport from "./pages/HelpSupport";
+import Profile from "./dashboard-pages/Profile";
 
 export default function App() {
 
@@ -39,7 +40,7 @@ export default function App() {
 					<Route path="/signup" element={<SignUp />} />
 					<Route path="/forgotPass" element={<ForgotPassword />} />
 					<Route path="/helpSupport" element={<HelpSupport />} />
-
+					<Route path="/profile" element={<Profile />} />
 				</Routes>
 			</BrowserRouter>
 		</>
