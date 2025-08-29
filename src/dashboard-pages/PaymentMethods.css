@@ -1,0 +1,91 @@
+.payment-methods {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f3e7ff, #f9f9ff);
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.payment-methods h1 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.payment-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .3s;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+
+.payment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.payment-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.payment-card p {
+    font-size: .95rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.select-btn {
+    background: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: background .3s;
+}
+
+.select-btn:hover {
+    background: #59359c;
+}
+
+@media (max-width: 768px) {
+    .payment-methods h1 {
+        font-size: 1.6rem;
+    }
+
+    .payment-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-card {
+        padding: 1.5rem 1rem;
+    }
+}

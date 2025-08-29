@@ -16,6 +16,7 @@ export const accDashboard = {
         {
             title: 'Payment Methods',
             para: 'Save cards, UPI & wallets for faster checkout.',
+            src: '/paymentMethods',
             btn: 'Payment Options'
         },
         {
