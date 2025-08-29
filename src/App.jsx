@@ -17,6 +17,7 @@ import SignUp from "./authentication/SignUp";
 import ForgotPassword from "./authentication/ForgotPassword";
 import HelpSupport from "./pages/HelpSupport";
 import Profile from "./dashboard-pages/Profile";
+import MyOrder from "./dashboard-pages/MyOrder";
 
 export default function App() {
 
@@ -41,6 +42,7 @@ export default function App() {
 					<Route path="/forgotPass" element={<ForgotPassword />} />
 					<Route path="/helpSupport" element={<HelpSupport />} />
 					<Route path="/profile" element={<Profile />} />
+					<Route path="/order" element={<MyOrder />} />
 				</Routes>
 			</BrowserRouter>
 		</>

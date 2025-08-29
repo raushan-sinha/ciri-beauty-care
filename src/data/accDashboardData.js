@@ -4,6 +4,7 @@ export const accDashboard = {
         {
             title: 'My Orders',
             para: 'Check your orders and track deliveries.',
+            src: '/order',
             btn: 'View Orders'
         },
         {

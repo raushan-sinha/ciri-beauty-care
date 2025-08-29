@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import './Profile.css'
 import { accDashboard } from '../data/accDashboardData'
+import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 
 export default function Profile() {
@@ -62,12 +64,14 @@ export default function Profile() {
                             <div className="profile-card" key={idx}>
                                 <h3>{card.title}</h3>
                                 <p>{card.para}</p>
-                                <button className="btn">{card.btn}</button>
+                                <Link className="btn" to="/order">{card.btn}</Link>
                             </div>
                         ))
                     }
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }
