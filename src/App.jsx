@@ -20,6 +20,7 @@ import Profile from "./dashboard-pages/Profile";
 import MyOrder from "./dashboard-pages/MyOrder";
 import Wishlist from "./dashboard-pages/Wishlist";
 import PaymentMethods from "./dashboard-pages/PaymentMethods";
+import Security from "./dashboard-pages/Security";
 
 export default function App() {
 
@@ -47,6 +48,7 @@ export default function App() {
 					<Route path="/order" element={<MyOrder />} />
 					<Route path="/wishlist" element={<Wishlist />} />
 					<Route path="/paymentMethods" element={<PaymentMethods />} />
+					<Route path="/security" element={<Security />} />
 				</Routes>
 			</BrowserRouter>
 		</>

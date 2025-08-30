@@ -22,6 +22,7 @@ export const accDashboard = {
         {
             title: 'Security',
             para: 'Update password and enable 2FA.',
+            src: '/security',
             btn: 'Update Security'
         },
         {
