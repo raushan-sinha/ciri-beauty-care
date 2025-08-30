@@ -28,11 +28,13 @@ export const accDashboard = {
         {
             title: 'Help & Support',
             para: 'Get 24/7 help from our support team.',
+            src: '/helpSupport',
             btn: 'Get Support'
         },
         {
             title: 'Logout',
             para: 'In this page you can Logout your profile.',
+            src: '/logout',
             btn: 'Logout'
         }
     ]
