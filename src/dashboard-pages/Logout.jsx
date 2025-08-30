@@ -15,7 +15,7 @@ export default function Logout() {
 
                     <div className="logout-actions">
                         <button className="btn logout-btn">Logout</button>
-                        <button className="btn cancel-btn">Cancel</button>
+                        <button className="btn cancel-btn" onClick={() => window.history.back()}>Cancel</button>
                     </div>
 
                     <div className="logout-info">
