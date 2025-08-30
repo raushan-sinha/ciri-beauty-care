@@ -2,7 +2,7 @@ import React from "react";
 import "./Security.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { security, securityForm } from "../data/securityData";
+import { security, securityForm, twoFactorData, btn, securityTips } from "../data/securityData";
 
 export default function Security() {
     return (
@@ -39,26 +39,27 @@ export default function Security() {
                         }
 
                         <div className="form-group">
-                            <label htmlFor="twoFactor">Enable Two-Factor Authentication (2FA)</label>
-                            <select id="twoFactor" name="twoFactor" autoComplete="off">
-                                <option value="off">Disabled</option>
-                                <option value="sms">SMS Verification</option>
-                                <option value="app">Authenticator App</option>
+                            <label htmlFor={twoFactorData.htmlFor}>{twoFactorData.label}</label>
+                            <select id={twoFactorData.id} name={twoFactorData.name} autoComplete={twoFactorData.autoComplete}>
+                                {
+                                    twoFactorData.options.map((item, idx) => (
+                                        <option value={item.value} key={idx}>{item.text}</option>
+                                    ))
+                                }
                             </select>
                         </div>
 
-                        <button type="submit" className="btn">Update Security</button>
+                        <button type="submit" className="btn">{btn}</button>
                     </form>
 
                     <div className="security-tips">
-                        <h3>Security Tips</h3>
+                        <h3>{securityTips.title}</h3>
                         <ul>
-                            <li>Use a strong password with at least 12 characters, mixing uppercase, lowercase, numbers, and symbols.</li>
-                            <li>Do not reuse passwords across multiple accounts.</li>
-                            <li>Enable Two-Factor Authentication (2FA) for stronger protection.</li>
-                            <li>Update your password every 3–6 months.</li>
-                            <li>Be cautious of phishing emails or suspicious links.</li>
-                            <li>Log out from shared or public devices after use.</li>
+                            {
+                                securityTips.lists.map((item, idx) => (
+                                    <li key={idx}>{item.list}</li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>
