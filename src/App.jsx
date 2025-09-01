@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import WomenPage from "./pages/WomenPage";
 import MenPage from "./pages/MenPage";
@@ -25,7 +25,6 @@ import Help from "./dashboard-pages/HelpSupport";
 import SubscriptionPage from "./dashboard-pages/SubscriptionPage";
 
 export default function App() {
-
 	return (
 		<>
 			<BrowserRouter>
@@ -46,13 +45,13 @@ export default function App() {
 					<Route path="/signup" element={<SignUp />} />
 					<Route path="/forgotPass" element={<ForgotPassword />} />
 					<Route path="/helpSupport" element={<HelpSupport />} />
-					<Route path="/profile" element={<Profile />} />
 					<Route path="/order" element={<MyOrder />} />
 					<Route path="/wishlist" element={<Wishlist />} />
 					<Route path="/paymentMethods" element={<PaymentMethods />} />
 					<Route path="/security" element={<Security />} />
 					<Route path="/helpSupport" element={<Help />} />
 					<Route path="/subscriptionPage" element={<SubscriptionPage />} />
+					<Route path="/profile" element={<Profile />} />
 				</Routes>
 			</BrowserRouter>
 		</>

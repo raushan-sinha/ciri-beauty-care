@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./LoginForm.css";
 import AppleIcon from "@mui/icons-material/Apple";
 import GoogleIcon from "@mui/icons-material/Google";
@@ -9,7 +9,18 @@ export default function LoginForm({ onClose }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showAlertPopup, setShowAlertPopup] = useState('');
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
+
+    //todo: Store user data in local storage or context after successful login -
+    useEffect(() => {
+        const loggedUserEmail = localStorage.getItem('userEmail');
+        if (loggedUserEmail) {
+            setIsLoggedIn(true);
+            navigate("/profile");
+        }
+    }, [navigate])
+
 
     //TODO: Add form submission handler and validation logic -
     const handleSubmit = (e) => {
@@ -22,12 +33,15 @@ export default function LoginForm({ onClose }) {
 
         //TODO: Simulate successful login
         if (email.trim() && password.trim()) {
+            localStorage.setItem('userEmail', email);
+            setIsLoggedIn(true);
             navigate("/profile");
         } else {
             setShowAlertPopup('Invalid email or password.');
             return;
         }
     }
+    if (isLoggedIn) return null;
 
     return (
         <div className="auth-modal">

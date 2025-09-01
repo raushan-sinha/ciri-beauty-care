@@ -8,7 +8,6 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Logout from '../authentication/Logout'
 
-
 export default function Profile() {
     const [showEdit, setShowEdit] = useState(false)
     const [showUpgrade, setShowUpgrade] = useState(false)
@@ -107,7 +106,11 @@ export default function Profile() {
             {
                 showLogoutBox && <Logout
                     onCancel={() => setShowLogoutBox(false)}
-                    onLogout={() => console.log(`User Logged out Account successfully`)}
+                    onLogout={() => {
+                        localStorage.removeItem('userEmail');
+                        setShowLogoutBox(false);
+                        window.location.reload();
+                    }}
                 />
             }
 
