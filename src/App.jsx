@@ -22,7 +22,7 @@ import Wishlist from "./dashboard-pages/Wishlist";
 import PaymentMethods from "./dashboard-pages/PaymentMethods";
 import Security from "./dashboard-pages/Security";
 import Help from "./dashboard-pages/HelpSupport";
-import Logout from "./dashboard-pages/Logout";
+import SubscriptionPage from "./dashboard-pages/SubscriptionPage";
 
 export default function App() {
 
@@ -52,7 +52,7 @@ export default function App() {
 					<Route path="/paymentMethods" element={<PaymentMethods />} />
 					<Route path="/security" element={<Security />} />
 					<Route path="/helpSupport" element={<Help />} />
-					<Route path="/logout" element={<Logout />} />
+					<Route path="/subscriptionPage" element={<SubscriptionPage />} />
 				</Routes>
 			</BrowserRouter>
 		</>

@@ -4,11 +4,15 @@ import './Profile.css'
 import { accDashboard } from '../data/accDashboardData'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Logout from '../authentication/Logout'
 
 
 export default function Profile() {
     const [showEdit, setShowEdit] = useState(false)
     const [showUpgrade, setShowUpgrade] = useState(false)
+    const [showLogoutBox, setShowLogoutBox] = useState(false)
 
     return (
         <>
@@ -26,12 +30,15 @@ export default function Profile() {
                         <h1>John Doe</h1>
                         <p>johndoe@example.com</p>
                         <div className="profile-btns">
-                            <button className="btn" onClick={() => setShowEdit(true)}>
-                                Edit Info
-                            </button>
-                            <button className="btn secondary" onClick={() => setShowUpgrade(true)}>
-                                Upgrade Account
-                            </button>
+                            <Stack direction="row" spacing={2}>
+                                <Button color="secondary" onClick={() => setShowEdit(true)}>Edit Profile</Button>
+                                <Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
+                                    Upgrade Account
+                                </Button>
+                                <Button variant="outlined" color="error" onClick={() => setShowLogoutBox(true)}>
+                                    Logout
+                                </Button>
+                            </Stack>
                         </div>
                     </div>
                 </div>
@@ -40,11 +47,37 @@ export default function Profile() {
                     <div className="extra-box">
                         <button className="close-btn" onClick={() => setShowEdit(false)}>✖</button>
                         <h2>Edit Personal Info</h2>
-                        <input type="text" placeholder="Full Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="tel" placeholder="Phone" />
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Full Name"
+                            autoComplete="name"
+                            required
+                        />
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            autoComplete="email"
+                            required
+                        />
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Phone"
+                            autoComplete="tel"
+                            required
+                        />
+
                         <button className="btn">Save Changes</button>
                     </div>
+
 
                 )}
 
@@ -70,6 +103,13 @@ export default function Profile() {
                     }
                 </div>
             </div>
+
+            {
+                showLogoutBox && <Logout
+                    onCancel={() => setShowLogoutBox(false)}
+                    onLogout={() => console.log(`User Logged out Account successfully`)}
+                />
+            }
 
             <Footer />
         </>

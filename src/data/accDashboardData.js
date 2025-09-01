@@ -32,10 +32,10 @@ export const accDashboard = {
             btn: 'Get Support'
         },
         {
-            title: 'Logout',
-            para: 'In this page you can Logout your profile.',
-            src: '/logout',
-            btn: 'Logout'
+            title: 'Subscription or Membership',
+            para: 'Your current plan: Basic Membership. Upgrade to enjoy exclusive benefits and offers!',
+            src: '/subscriptionPage',
+            btn: 'Manage Subscription'
         }
     ]
 }
