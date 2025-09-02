@@ -66,6 +66,16 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-btns button,
+.profile-btns .MuiButton-root {
+    min-width: 140px;
+    padding: .6rem 1.2rem;
+    font-size: .9rem;
+    border-radius: .6rem;
+    text-transform: none;
 }
 
 .close-btn {
@@ -155,6 +165,8 @@
     cursor: pointer;
     transition: background .2s;
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn:hover {
@@ -169,24 +181,120 @@
     background: #222;
 }
 
+/* ---------- Responsive ---------- */
+
+@media (max-width:1024px) {
+    .profile-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .profile-info p {
+        font-size: .95rem;
+    }
+}
+
+/* ✅ Tablet screens */
 @media (max-width:768px) {
     .profile-header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 1rem;
     }
 
     .profile-info h1 {
         font-size: 1.5rem;
     }
+
+    .profile-info p {
+        font-size: .95rem;
+    }
+
+    .profile-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .profile-btns button,
+    .profile-btns .MuiButton-root {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .extra-box {
+        padding: 1rem;
+    }
 }
 
+/* ✅ Mobile screens */
 @media (max-width:480px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .profile-info h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .profile-info p {
+        font-size: .85rem;
+        text-align: center;
+    }
+
     .profile-pic img {
         width: 90px;
         height: 90px;
     }
 
-    .btn {
+    .profile-pic {
+        margin-right: 5%;
+    }
+
+    .upload-btn {
+        font-size: .75rem;
+        padding: .3rem .6rem;
+    }
+
+    .profile-card h3 {
+        font-size: 1rem;
+    }
+
+    .profile-card p {
+        font-size: .85rem;
+    }
+
+    /* ✅ Button grid layout */
+    .profile-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
         width: 100%;
+        max-width: 300px;
+        margin-left: -10%;
+    }
+
+    .profile-btns button,
+    .profile-btns .MuiButton-root {
+        width: 100%;
+        font-size: 12px;
+        padding: 2px;
+        margin-left: 5%;
+    }
+
+    /* ✅ Last button spans full row */
+    .profile-btns button:last-child,
+    .profile-btns .MuiButton-root:last-child {
+        grid-column: 1 / -1;
+    }
+
+    #upgrade-btn {
+        width: min-content;
+        margin: auto;
     }
 }

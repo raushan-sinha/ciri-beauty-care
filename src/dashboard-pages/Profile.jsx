@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import './Profile.css'
 import { accDashboard } from '../data/accDashboardData'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -12,6 +12,7 @@ export default function Profile() {
     const [showEdit, setShowEdit] = useState(false)
     const [showUpgrade, setShowUpgrade] = useState(false)
     const [showLogoutBox, setShowLogoutBox] = useState(false)
+    const navigate = useNavigate();
 
     return (
         <>
@@ -31,9 +32,9 @@ export default function Profile() {
                         <div className="profile-btns">
                             <Stack direction="row" spacing={2}>
                                 <Button color="secondary" onClick={() => setShowEdit(true)}>Edit Profile</Button>
-                                <Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
+                                {/* <Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
                                     Upgrade Account
-                                </Button>
+                                </Button> */}
                                 <Button variant="outlined" color="error" onClick={() => setShowLogoutBox(true)}>
                                     Logout
                                 </Button>
@@ -109,7 +110,7 @@ export default function Profile() {
                     onLogout={() => {
                         localStorage.removeItem('userEmail');
                         setShowLogoutBox(false);
-                        window.location.reload();
+                        navigate("/");
                     }}
                 />
             }

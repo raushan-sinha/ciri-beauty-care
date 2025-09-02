@@ -31,7 +31,7 @@ export default function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/women" element={<WomenPage />} />
-					<Route path="men" element={<MenPage />} />
+					<Route path="/men" element={<MenPage />} />
 					<Route path="/brands" element={<BrandsPage />} />
 					<Route path="/glowgear" element={<GlowGear />} />
 					<Route path="/aboutus" element={<AboutUs />} />
