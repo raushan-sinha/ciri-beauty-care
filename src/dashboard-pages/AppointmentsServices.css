@@ -1,0 +1,109 @@
+.appointments-container {
+    width: 100%;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status.confirmed {
+    background: #e0f7ec;
+    color: #0a8754;
+}
+
+.status.pending {
+    background: #fff4e0;
+    color: #e69500;
+}
+
+.status.completed {
+    background: #e6e6fa;
+    color: #4b0082;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-heading {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointments-container {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .card h4 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+}

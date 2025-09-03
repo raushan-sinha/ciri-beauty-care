@@ -36,6 +36,18 @@ export const accDashboard = {
             para: 'Your current plan: Basic Membership. Upgrade to enjoy exclusive benefits and offers!',
             src: '/subscriptionPage',
             btn: 'Manage Subscription'
+        },
+        {
+            title: 'Referral Program',
+            para: 'You can send your Referral code to your friends via WhatsApp, Facebook and X',
+            src: '/referral',
+            btn: 'Referral'
+        },
+        {
+            title: 'Appointments & Services',
+            para: 'A modern, responsive section to track user’s appointments & past services in the profile dashboard.',
+            src: '/appointment',
+            btn: 'Appointments & Services'
         }
     ]
 }

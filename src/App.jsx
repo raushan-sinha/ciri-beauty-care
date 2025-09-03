@@ -23,6 +23,8 @@ import PaymentMethods from "./dashboard-pages/PaymentMethods";
 import Security from "./dashboard-pages/Security";
 import Help from "./dashboard-pages/HelpSupport";
 import SubscriptionPage from "./dashboard-pages/SubscriptionPage";
+import Referral from "./dashboard-pages/Referral";
+import AppointmentsServices from "./dashboard-pages/AppointmentsServices";
 
 export default function App() {
 	return (
@@ -52,6 +54,8 @@ export default function App() {
 					<Route path="/helpSupport" element={<Help />} />
 					<Route path="/subscriptionPage" element={<SubscriptionPage />} />
 					<Route path="/profile" element={<Profile />} />
+					<Route path="/referral" element={<Referral />} />
+					<Route path="/appointment" element={<AppointmentsServices />} />
 				</Routes>
 			</BrowserRouter>
 		</>

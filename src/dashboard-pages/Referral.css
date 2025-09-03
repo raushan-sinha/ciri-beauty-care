@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.referral-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #232f3e;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.referral-box {
+    display: grid;
+    gap: 20px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.referral-code {
+    text-align: center;
+}
+
+.referral-code h3 {
+    color: #232f3e;
+    margin: 0 0 10px;
+}
+
+.code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9900;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+.rewards-tracker {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.rewards-tracker h3 {
+    color: #232f3e;
+    margin: 0 0 10px;
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.reward-header {
+    font-weight: bold;
+    color: #232f3e;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.reward-row {
+    display: contents;
+}
+
+.reward-row span {
+    padding: 10px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .referral-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .referral-box {
+        padding: 15px;
+    }
+
+    .code {
+        font-size: 1.2rem;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reward-header,
+    .reward-row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reward-header span,
+    .reward-row span {
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) and (max-width: 900px) {
+    .referral-box {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .share-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

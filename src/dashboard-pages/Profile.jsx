@@ -29,17 +29,15 @@ export default function Profile() {
                     <div className="profile-info">
                         <h1>John Doe</h1>
                         <p>johndoe@example.com</p>
-                        <div className="profile-btns">
-                            <Stack direction="row" spacing={2}>
-                                <Button color="secondary" onClick={() => setShowEdit(true)}>Edit Profile</Button>
-                                {/* <Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
-                                    Upgrade Account
-                                </Button> */}
-                                <Button variant="outlined" color="error" onClick={() => setShowLogoutBox(true)}>
-                                    Logout
-                                </Button>
-                            </Stack>
-                        </div>
+                        <Stack direction="row" spacing={2} display="flex" flexWrap={"wrap"} gap={2} justifyContent="center">
+                            <Button color="secondary" onClick={() => setShowEdit(true)}>Edit Profile</Button>
+                            <Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
+                                Upgrade Account
+                            </Button>
+                            <Button variant="outlined" color="error" onClick={() => setShowLogoutBox(true)}>
+                                Logout
+                            </Button>
+                        </Stack>
                     </div>
                 </div>
 
@@ -77,8 +75,6 @@ export default function Profile() {
 
                         <button className="btn">Save Changes</button>
                     </div>
-
-
                 )}
 
                 {showUpgrade && (
