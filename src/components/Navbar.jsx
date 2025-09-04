@@ -9,11 +9,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import StorefrontSharpIcon from '@mui/icons-material/StorefrontSharp';
 import Tooltip from '@mui/material/Tooltip';
 import "./Navbar.css";
-import LoginForm from "../authentication/LoginForm";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [showAuthBox, setShowAuthBox] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -37,117 +35,113 @@ export default function Navbar() {
 
     // Desktop Nav Icons with tooltips
     const desktopNavIcons = [
-        { icon: <AccountCircleIcon />, title: "User Account", onClick: () => setShowAuthBox(true) },
-        { icon: <ShoppingCartIcon />, title: "Cart", link: "/cart" },
-        { icon: <StorefrontSharpIcon />, title: "Supplier", link: "/supplier" }
+        { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account", link: "/authform" },
+        { icon: <ShoppingCartIcon className="navLink-icon" fontSize="large" />, title: "Cart", link: "/cart" },
+        { icon: <StorefrontSharpIcon className="navLink-icon" fontSize="large" />, title: "Supplier", link: "/supplier" }
     ];
 
     // Phone Nav Icons
     const navLinkPhoneIcons = [
-        { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account" },
+        { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account", link: "/authform" },
         { icon: <ShoppingCartIcon className="navLink-icon" fontSize="large" />, title: "Cart", link: "/cart" },
         { icon: <StorefrontSharpIcon className="navLink-icon" fontSize="large" />, title: "Supplier", link: "/supplier" }
     ];
 
     return (
-        <header className="navbar">
-            <div className="navbar-container">
-                <div className="logo">Ciri-BeautyCare</div>
+        <>
+            <header className="navbar">
+                <div className="navbar-container">
+                    <div className="logo">Ciri-BeautyCare</div>
 
-                {/* Desktop Nav Links */}
-                <nav className="nav-links desktop-nav">
-                    {navLinks.map((link, idx) => (
-                        <Link key={idx} to={link.href}>
-                            {link.name}
-                        </Link>
-                    ))}
-                </nav>
+                    {/* Desktop Nav Links */}
+                    <nav className="nav-links desktop-nav">
+                        {navLinks.map((link, idx) => (
+                            <Link key={idx} to={link.href}>
+                                {link.name}
+                            </Link>
+                        ))}
+                    </nav>
 
-                {/* Desktop Search */}
-                <div className="search-bar desktop-search">
-                    <SearchIcon className="search-icon" />
-                    <input
-                        type="text"
-                        id="searchInput"
-                        name="search"
-                        placeholder="Search for products, brands..."
-                        aria-label="Search for products or brands"
-                        autoComplete="off"
-                    />
-                    <MicNoneIcon className="mic-icon" />
-                </div>
-
-                {/* Desktop Icons with Tooltips */}
-                <div className="icons desktop-icons">
-                    {desktopNavIcons.map((item, idx) => (
-                        <Tooltip
-                            key={idx}
-                            title={item.title}
-                            arrow
-                            slotProps={{
-                                tooltip: {
-                                    sx: {
-                                        backgroundColor: '#1e90ff',
-                                        color: "#101923",
-                                        fontSize: '14px',
-                                        fontWeight: '600'
-                                    },
-                                },
-                            }}
-                        >
-                            {
-                                item.link ? (
-                                    <Link to={item.link} >{item.icon}</Link>
-                                ) :
-                                    (
-                                        <span onClick={() => setShowAuthBox(true)}>
-                                            {item.icon}
-                                        </span>
-                                    )
-                            }
-                        </Tooltip>
-                    ))}
-                </div>
-
-                {/* Mobile Hamburger */}
-                <div className="mobile-menu-icon" onClick={toggleMenu}>
-                    {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
-                </div>
-            </div>
-
-            {/* Mobile Menu */}
-            {isMenuOpen && (
-                <nav className="mobile-nav">
-                    <div className="search-bar">
+                    {/* Desktop Search */}
+                    <div className="search-bar desktop-search">
                         <SearchIcon className="search-icon" />
-                        <input type="text" name="search" placeholder="Search for products, brands..." />
+                        <input
+                            type="text"
+                            id="searchInput"
+                            name="search"
+                            placeholder="Search for products, brands..."
+                            aria-label="Search for products or brands"
+                            autoComplete="off"
+                        />
                         <MicNoneIcon className="mic-icon" />
                     </div>
 
-                    {navLinks.map((link, idx) => (
-                        <Link key={idx} to={link.href}>
-                            {link.name}
-                        </Link>
-                    ))}
+                    {/* Desktop Icons with Tooltips */}
+                    <div className="icons desktop-icons">
+                        {desktopNavIcons.map((item, idx) => (
+                            <Tooltip
+                                key={idx}
+                                title={item.title}
+                                arrow
+                                slotProps={{
+                                    tooltip: {
+                                        sx: {
+                                            backgroundColor: '#1e90ff',
+                                            color: "#101923",
+                                            fontSize: '14px',
+                                            fontWeight: '600'
+                                        },
+                                    },
+                                }}
+                            >
+                                {item.link ? (
+                                    <Link to={item.link}>{item.icon}</Link>
+                                ) : (
+                                    <span onClick={() => setShowAuthBox(true)}>
+                                        {item.icon}
+                                    </span>
+                                )}
+                            </Tooltip>
+                        ))}
+                    </div>
 
-                    <div className="navLink-icons">
-                        {navLinkPhoneIcons.map((item, index) => (
-                            item.link ? (
-                                <Link key={index} to={item.link}>{item.icon}
-                                </Link>
-                            ) :
-                                (
+                    {/* Mobile Hamburger */}
+                    <div className="mobile-menu-icon" onClick={toggleMenu}>
+                        {isMenuOpen ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
+                    </div>
+                </div>
+
+                {/* Mobile Menu */}
+                {isMenuOpen && (
+                    <nav className="mobile-nav">
+                        <div className="search-bar">
+                            <SearchIcon className="search-icon" />
+                            <input type="text" name="search" placeholder="Search for products, brands..." />
+                            <MicNoneIcon className="mic-icon" />
+                        </div>
+
+                        {navLinks.map((link, idx) => (
+                            <Link key={idx} to={link.href}>
+                                {link.name}
+                            </Link>
+                        ))}
+
+                        <div className="navLink-icons">
+                            {navLinkPhoneIcons.map((item, index) =>
+                                item.link ? (
+                                    <Link key={index} to={item.link}>
+                                        {item.icon}
+                                    </Link>
+                                ) : (
                                     <div key={index} onClick={() => setShowAuthBox(true)}>
                                         {item.icon}
                                     </div>
                                 )
-                        ))}
-                    </div>
-                </nav>
-            )}
-
-            {/* Render Login/Signup modal */}
-            {showAuthBox && <LoginForm onClose={() => setShowAuthBox(false)} />}
-        </header>
+                            )}
+                        </div>
+                    </nav>
+                )}
+            </header>
+        </>
     );
 }

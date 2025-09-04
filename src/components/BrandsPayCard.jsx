@@ -3,13 +3,6 @@ import "./PaymentCard.css";
 
 export default function BrandsPayCard({ product, onClose }) {
 
-    const paymentMethods = [
-        { id: "phonepe", label: "PhonePe", icon: "📱" },
-        { id: "gpay", label: "Google Pay (GPay)", icon: "💳" },
-        { id: "paypal", label: "PayPal", icon: "🅿️" },
-        { id: "card", label: "Bank Debit Card", icon: "🏦" },
-        { id: "cod", label: "Cash on Delivery", icon: "💵" },
-    ];
 
     return (
         <div className="payment-overlay">
@@ -31,20 +24,8 @@ export default function BrandsPayCard({ product, onClose }) {
                 </div>
 
                 {/* Payment Options */}
-                <form className="payment-form">
-                    <h4>Select Payment Method</h4>
-                    <div className="payment-options">
-                        {paymentMethods.map((method) => (
-                            <label key={method.id} className="payment-option">
-                                <input type="radio" name="payment" value={method.id} required />
-                                <span className="payment-icon">{method.icon}</span>
-                                <span className="payment-label">{method.label}</span>
-                            </label>
-                        ))}
-                    </div>
 
                     <button type="submit" className="pay-btn">Pay Now</button>
-                </form>
             </div>
         </div>
     );

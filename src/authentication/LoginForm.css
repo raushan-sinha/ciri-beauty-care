@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Modal Background */
 .auth-modal {
     position: fixed;
     inset: 0;
@@ -11,9 +12,14 @@
     align-items: center;
     z-index: 1000;
     padding: 1rem;
+    overflow-y: auto;
 }
 
+/* Auth Box */
 .auth-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #fff;
     border-radius: 12px;
     padding: 2rem;
@@ -36,15 +42,17 @@
     }
 }
 
+/* Close Button */
 #close-btn {
     position: absolute;
-    inset: 1rem 1rem auto auto;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     cursor: pointer;
     color: #666;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 50%;
     transition: all 0.2s ease;
 }
@@ -54,6 +62,7 @@
     color: #333;
 }
 
+/* Heading */
 .auth-box h2 {
     text-align: center;
     margin: 0 0 1.5rem;
@@ -61,27 +70,25 @@
     color: #333;
 }
 
+/* Form */
 .login-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
 .form-group {
-    position: relative;
     width: 100%;
 }
 
 .form-group input {
     width: 100%;
-    min-width: 280px;
-    padding: 1rem 1.25rem;
+    padding: 0.9rem 1.1rem;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
-    font: 1rem/1.2 inherit;
-    transition: border-color 0.3s ease;
-    background: #fff;
-    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus {
@@ -94,6 +101,7 @@
     color: #999;
 }
 
+/* Login Button */
 .login-btn {
     width: 100%;
     padding: 0.875rem;
@@ -104,7 +112,7 @@
     font: 600 1rem/1 inherit;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 0.5rem 0 0;
+    margin-top: 0.5rem;
 }
 
 .login-btn:hover {
@@ -116,10 +124,12 @@
     transform: translateY(0);
 }
 
+/* Social Login */
 .social-login {
     display: flex;
     gap: 1rem;
     margin: 1.5rem 0;
+    width: 100%;
 }
 
 #google-btn,
@@ -127,8 +137,9 @@
     flex: 1;
     padding: 0.875rem 1rem;
     border: 2px solid #e0e0e0;
-    background: #fff;
     border-radius: 8px;
+    background: #000;
+    color: #fff;
     font: 500 1rem/1.2 inherit;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -139,16 +150,7 @@
     min-height: 48px;
 }
 
-.google-btn:hover {
-    border-color: #4285f4;
-    background: #f8f9ff;
-}
-
-.apple-btn:hover {
-    border-color: #333;
-    background: #f8f8f8;
-}
-
+/* Links */
 .auth-links {
     display: flex;
     flex-direction: column;
@@ -164,7 +166,7 @@
 .auth-links a {
     color: #4285f4;
     text-decoration: none;
-    font: 500 inherit/inherit inherit;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -173,45 +175,54 @@
     text-decoration: underline;
 }
 
+/* --- Responsive Breakpoints --- */
+
+/* Tablets */
 @media (max-width: 768px) {
+   #close-btn {
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #666;
+        padding: 0.4rem;
+        border-radius: 50%;
+        transition: 0.2s;
+    }
     .auth-modal {
         padding: 1rem 0.75rem;
     }
 
     .auth-box {
-        padding: 1.5rem;
-        max-width: 100%;
+        max-width: 90%;
+        padding: 20px 30px;
         border-radius: 8px;
     }
 
     .auth-box h2 {
-        font: 600 1.5rem/1.2 inherit;
-        margin: 0 0 1.25rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
     }
 
     .form-group input {
-        min-width: 240px;
-        padding: 0.875rem 1rem;
-        font: 1rem/1.2 inherit;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
     }
 
     .login-btn {
         padding: 0.75rem;
-        font: 600 1rem/1 inherit;
     }
 
     .social-login {
         flex-direction: column;
         gap: 0.75rem;
     }
-
-    .google-btn,
-    .apple-btn {
-        padding: 0.875rem;
-        font: 500 1rem/1 inherit;
-    }
 }
 
+/* Small Phones */
 @media (max-width: 480px) {
     .auth-modal {
         padding: 0.5rem;
@@ -222,65 +233,73 @@
         border-radius: 6px;
     }
 
-    #close-btn {
-        inset: 0.75rem 0.75rem auto auto;
-        font: 1.125rem/1 inherit;
-    }
-
     .auth-box h2 {
-        font: 600 1.375rem/1.2 inherit;
-        margin: 0 0 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
 
     .form-group input {
-        min-width: 200px;
+        font-size: 0.95rem;
         padding: 0.75rem 1rem;
-        font: 0.95rem/1.2 inherit;
     }
 
     .login-btn {
-        padding: 0.625rem;
-        font: 600 0.95rem/1 inherit;
+        padding: 0.65rem;
+        font-size: 0.95rem;
     }
 
-    .google-btn,
-    .apple-btn {
-        padding: 0.75rem;
-        font: 500 0.9rem/1 inherit;
+    #close-btn {
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #666;
+        padding: 0.4rem;
+        border-radius: 50%;
+        transition: 0.2s;
+    }
+
+    #google-btn,
+    #apple-btn {
+        padding: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .auth-links {
-        font: 0.85rem/1.4 inherit;
+        font-size: 0.85rem;
     }
 }
 
+/* Landscape Small Height */
 @media (max-height: 600px) and (orientation: landscape) {
     .auth-modal {
-        padding: 0.5rem;
         align-items: flex-start;
-        overflow-y: auto;
+        padding: 0.5rem;
     }
 
     .auth-box {
-        padding: 1rem;
         margin: 1rem auto;
         max-height: 90vh;
         overflow-y: auto;
+        padding: 1rem;
     }
 
     .auth-box h2 {
-        font: 600 1.25rem/1.2 inherit;
-        margin: 0 0 0.75rem;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
     }
 
     .form-group input {
-        min-width: 180px;
-        padding: 0.625rem 0.875rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
     }
 
     .login-btn {
         padding: 0.5rem;
-        margin: 0.25rem 0 0;
+        font-size: 0.9rem;
     }
 
     .social-login {
@@ -288,18 +307,19 @@
         gap: 0.5rem;
     }
 
-    .google-btn,
-    .apple-btn {
+    #google-btn,
+    #apple-btn {
         padding: 0.5rem;
-        font: 500 0.85rem/1 inherit;
+        font-size: 0.85rem;
     }
 
     .auth-links {
         gap: 0.5rem;
-        font: 0.8rem/1.4 inherit;
+        font-size: 0.8rem;
     }
 }
 
+/* Medium-Large Screens */
 @media (min-width: 769px) and (max-width: 1024px) {
     .auth-box {
         max-width: 450px;
@@ -307,27 +327,11 @@
     }
 
     .auth-box h2 {
-        font: 600 1.875rem/1.2 inherit;
-    }
-
-    .form-group input {
-        min-width: 260px;
-        padding: 1rem 1.125rem;
-        font: 1.05rem/1.2 inherit;
-    }
-
-    .login-btn {
-        padding: 1rem;
-        font: 600 1.05rem/1 inherit;
-    }
-
-    .google-btn,
-    .apple-btn {
-        padding: 0.875rem;
-        font: 500 0.95rem/1 inherit;
+        font-size: 1.8rem;
     }
 }
 
+/* Desktops */
 @media (min-width: 1025px) {
     .auth-box {
         max-width: 500px;
@@ -335,29 +339,22 @@
     }
 
     .auth-box h2 {
-        font: 600 2rem/1.2 inherit;
-        margin: 0 0 2rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .form-group input {
-        min-width: 300px;
-        padding: 1.125rem 1.5rem;
-        font: 1.05rem/1.2 inherit;
+        font-size: 1.05rem;
+        padding: 1.1rem 1.4rem;
     }
 
     .login-btn {
         padding: 1rem;
-        font: 600 1.05rem/1 inherit;
-        margin: 0.75rem 0 0;
+        font-size: 1.05rem;
+        margin-top: 0.75rem;
     }
 
     .social-login {
         margin: 2rem 0;
-    }
-
-    .google-btn,
-    .apple-btn {
-        padding: 0.875rem 1rem;
-        font: 500 0.95rem/1 inherit;
     }
 }

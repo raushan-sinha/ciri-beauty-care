@@ -12,35 +12,25 @@ export default function LoginForm({ onClose }) {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();
 
-    //todo: Store user data in local storage or context after successful login -
     useEffect(() => {
-        const loggedUserEmail = localStorage.getItem('userEmail');
+        const loggedUserEmail = localStorage.getItem("userEmail");
         if (loggedUserEmail) {
             setIsLoggedIn(true);
             navigate("/profile");
         }
-    }, [navigate])
+    }, [navigate]);
 
-
-    //TODO: Add form submission handler and validation logic -
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!email.trim() || !password.trim()) {
-            setShowAlertPopup('Please fill in all fields.');
+            setShowAlertPopup("Please fill in all fields.");
             return;
         }
-        console.log('Logging in with:', { email, password });
+        localStorage.setItem("userEmail", email);
+        setIsLoggedIn(true);
+        navigate("/profile");
+    };
 
-        //TODO: Simulate successful login
-        if (email.trim() && password.trim()) {
-            localStorage.setItem('userEmail', email);
-            setIsLoggedIn(true);
-            navigate("/profile");
-        } else {
-            setShowAlertPopup('Invalid email or password.');
-            return;
-        }
-    }
     if (isLoggedIn) return null;
 
     return (
@@ -51,33 +41,24 @@ export default function LoginForm({ onClose }) {
 
                 <h2>Login for CiriBeautyCare</h2>
 
-                <form
-                    className="login-form"
-                    onSubmit={handleSubmit}
-                >
+                <form className="login-form" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <input
                             type="email"
-                            id="loginEmail"
-                            name="email"
                             placeholder="Email"
-                            aria-label="Email"
-                            autoComplete="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            autoComplete="email"
                         />
                     </div>
 
                     <div className="form-group">
                         <input
                             type="password"
-                            id="loginPassword"
-                            name="password"
                             placeholder="Password"
-                            aria-label="Password"
-                            autoComplete="current-password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+                            autoComplete="current-password"
                         />
                     </div>
                     <button type="submit" className="login-btn">Login</button>
@@ -88,7 +69,6 @@ export default function LoginForm({ onClose }) {
                     <button type="button" id="google-btn">
                         <GoogleIcon fontSize="medium" />
                     </button>
-
                     <button type="button" id="apple-btn">
                         <AppleIcon fontSize="medium" />
                     </button>
@@ -97,7 +77,7 @@ export default function LoginForm({ onClose }) {
                 {/* Links */}
                 <div className="auth-links">
                     <span>
-                        Don't have an account? <Link to="/signup">Sign Up</Link>
+                        Don’t have an account? <Link to="/signup">Sign Up</Link>
                     </span>
                     <span>
                         <Link to="/forgotPass">Forgot Password?</Link>
@@ -106,7 +86,10 @@ export default function LoginForm({ onClose }) {
             </div>
 
             {/* Alert Popup */}
-            <AlertPopup message={showAlertPopup} onClose={() => setShowAlertPopup('')} />
+            <AlertPopup
+                message={showAlertPopup}
+                onClose={() => setShowAlertPopup("")}
+            />
         </div>
     );
 }

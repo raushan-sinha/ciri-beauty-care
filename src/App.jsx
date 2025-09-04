@@ -25,6 +25,7 @@ import Help from "./dashboard-pages/HelpSupport";
 import SubscriptionPage from "./dashboard-pages/SubscriptionPage";
 import Referral from "./dashboard-pages/Referral";
 import AppointmentsServices from "./dashboard-pages/AppointmentsServices";
+import AuthForm from "./authentication/AuthForm";
 
 export default function App() {
 	return (
@@ -55,7 +56,9 @@ export default function App() {
 					<Route path="/subscriptionPage" element={<SubscriptionPage />} />
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/referral" element={<Referral />} />
-					<Route path="/appointment" element={<AppointmentsServices />} />
+					<Route path="/appointmentsServices" element={<AppointmentsServices />} />
+					<Route path="/authform" element={<AuthForm />} />
+					
 				</Routes>
 			</BrowserRouter>
 		</>

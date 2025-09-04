@@ -13,9 +13,12 @@ export default function SignUp() {
             <div className="signup-wrapper">
                 <div className="signup-box">
                     {/* Close button goes back to previous page */}
-                    <button className="close-btn" onClick={() => window.history.back()}>
-                        ✖
-                    </button>
+                    <div>
+                        <button className="close-btn" onClick={() => window.history.back()}>
+                            ✖
+                        </button>
+                    </div>
+                    <br />
 
                     <h2>CiriBeautyCare Signup</h2>
 

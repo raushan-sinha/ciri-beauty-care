@@ -1,301 +1,301 @@
 .profile-page {
-    padding: 2rem;
-    background: linear-gradient(135deg, #f5f7fa, #e6ebf5);
-    min-height: 100vh;
-    font-family: "Segoe UI", sans-serif;
-    color: #333;
+	padding: 2rem;
+	background: linear-gradient(135deg, #f5f7fa, #e6ebf5);
+	min-height: 100vh;
+	font-family: "Segoe UI", sans-serif;
+	color: #333;
 }
 
 .profile-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    background: rgba(255, 255, 255, .9);
-    padding: 1.5rem;
-    border-radius: 1.2rem;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .1);
-    flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+	background: rgba(255, 255, 255, .9);
+	padding: 1.5rem;
+	border-radius: 1.2rem;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, .1);
+	flex-wrap: wrap;
 }
 
 .profile-pic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .profile-pic img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ff4b6e;
-    margin-bottom: .5rem;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid #ff4b6e;
+	margin-bottom: .5rem;
 }
 
 .upload-btn {
-    background: #ff4b6e;
-    color: #fff;
-    padding: .4rem .8rem;
-    border-radius: .4rem;
-    cursor: pointer;
-    font-size: .85rem;
-    transition: background .2s;
+	background: #ff4b6e;
+	color: #fff;
+	padding: .4rem .8rem;
+	border-radius: .4rem;
+	cursor: pointer;
+	font-size: .85rem;
+	transition: background .2s;
 }
 
 .upload-btn:hover {
-    background: #e63e5f;
+	background: #e63e5f;
 }
 
 .profile-info h1 {
-    font-size: 1.8rem;
-    margin: 0 0 .3rem;
-    color: #222;
-    text-align: start;
+	font-size: 1.8rem;
+	margin: 0 0 .3rem;
+	color: #222;
+	text-align: start;
 }
 
 .profile-info p {
-    font-size: 1rem;
-    margin: 0 0 .8rem;
-    color: #555;
+	font-size: 1rem;
+	margin: 0 0 .8rem;
+	color: #555;
 }
 
 .profile-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .profile-btns button,
 .profile-btns .MuiButton-root {
-    min-width: 140px;
-    padding: .6rem 1.2rem;
-    font-size: .9rem;
-    border-radius: .6rem;
-    text-transform: none;
+	min-width: 140px;
+	padding: .6rem 1.2rem;
+	font-size: .9rem;
+	border-radius: .6rem;
+	text-transform: none;
 }
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-    transition: color .3s;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	background: transparent;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #333;
+	transition: color .3s;
 }
 
 .close-btn:hover {
-    color: #e74c3c;
+	color: #e74c3c;
 }
 
 .extra-box {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
-    margin-bottom: 2rem;
-    position: relative;
+	background: #fff;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
+	margin-bottom: 2rem;
+	position: relative;
 }
 
 .extra-box input {
-    width: 100%;
-    padding: .7rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    font-size: .95rem;
+	width: 100%;
+	padding: .7rem 1rem;
+	border: 1px solid #ddd;
+	border-radius: .5rem;
+	margin-bottom: 1rem;
+	font-size: .95rem;
 }
 
 .extra-box.premium {
-    background: linear-gradient(135deg, #ffe7ec, #fff5f8);
-    border: 2px solid #ff4b6e;
+	background: linear-gradient(135deg, #ffe7ec, #fff5f8);
+	border: 2px solid #ff4b6e;
 }
 
 .section-title {
-    font-size: 1.4rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    color: #444;
+	font-size: 1.4rem;
+	margin: 1.5rem 0;
+	text-align: center;
+	color: #444;
 }
 
 .profile-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 1.5rem;
 }
 
 .profile-card {
-    background: #fff;
-    border-radius: 1.2rem;
-    padding: 1.5rem;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
-    transition: transform .2s, box-shadow .2s;
+	background: #fff;
+	border-radius: 1.2rem;
+	padding: 1.5rem;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
+	transition: transform .2s, box-shadow .2s;
 }
 
 .profile-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
+	transform: translateY(-6px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .12);
 }
 
 .profile-card h3 {
-    font-size: 1.2rem;
-    margin: 0 0 .8rem;
-    color: #333;
+	font-size: 1.2rem;
+	margin: 0 0 .8rem;
+	color: #333;
 }
 
 .profile-card p {
-    font-size: .95rem;
-    margin: 0 0 1rem;
-    color: #666;
+	font-size: .95rem;
+	margin: 0 0 1rem;
+	color: #666;
 }
 
 .btn {
-    background: #ff4b6e;
-    color: #fff;
-    padding: .6rem 1.2rem;
-    border: none;
-    border-radius: .6rem;
-    font-size: .9rem;
-    cursor: pointer;
-    transition: background .2s;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
+	background: #ff4b6e;
+	color: #fff;
+	padding: .6rem 1.2rem;
+	border: none;
+	border-radius: .6rem;
+	font-size: .9rem;
+	cursor: pointer;
+	transition: background .2s;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
 }
 
 .btn:hover {
-    background: #e63e5f;
+	background: #e63e5f;
 }
 
 .btn.secondary {
-    background: #444;
+	background: #444;
 }
 
 .btn.secondary:hover {
-    background: #222;
+	background: #222;
 }
 
 /* ---------- Responsive ---------- */
 
 @media (max-width:1024px) {
-    .profile-info h1 {
-        font-size: 1.6rem;
-    }
+	.profile-info h1 {
+		font-size: 1.6rem;
+	}
 
-    .profile-info p {
-        font-size: .95rem;
-    }
+	.profile-info p {
+		font-size: .95rem;
+	}
 }
 
 /* ✅ Tablet screens */
 @media (max-width:768px) {
-    .profile-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-    }
+	.profile-header {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+	}
 
-    .profile-info h1 {
-        font-size: 1.5rem;
-    }
+	.profile-info h1 {
+		font-size: 1.5rem;
+	}
 
-    .profile-info p {
-        font-size: .95rem;
-    }
+	.profile-info p {
+		font-size: .95rem;
+	}
 
-    .profile-btns {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
-      margin-left: -10%;
-    }
+	.profile-btns {
+		flex-direction: column;
+		width: 100%;
+		gap: 12px;
+		margin-left: -10%;
+	}
 
-    .profile-btns button,
-    .profile-btns .MuiButton-root {
-        width: 100%;
-        max-width: 320px;
-    }
+	.profile-btns button,
+	.profile-btns .MuiButton-root {
+		width: 100%;
+		max-width: 320px;
+	}
 
-    .extra-box {
-        padding: 1rem;
-    }
+	.extra-box {
+		padding: 1rem;
+	}
 }
 
 /* ✅ Mobile screens */
 @media (max-width:480px) {
-    .profile-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;
-        width: 100%;
-    }
+	.profile-header {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+		width: 100%;
+	}
 
-    .profile-info h1 {
-        font-size: 1.3rem;
-        text-align: center;
-    }
+	.profile-info h1 {
+		font-size: 1.3rem;
+		text-align: center;
+	}
 
-    .profile-info p {
-        font-size: .85rem;
-        text-align: center;
-    }
+	.profile-info p {
+		font-size: .85rem;
+		text-align: center;
+	}
 
-    .profile-pic img {
-        width: 90px;
-        height: 90px;
-    }
+	.profile-pic img {
+		width: 90px;
+		height: 90px;
+	}
 
-    .profile-pic {
-        margin-right: 5%;
-    }
+	.profile-pic {
+		margin-right: 5%;
+	}
 
-    .upload-btn {
-        font-size: .75rem;
-        padding: .3rem .6rem;
-    }
+	.upload-btn {
+		font-size: .75rem;
+		padding: .3rem .6rem;
+	}
 
-    .profile-card h3 {
-        font-size: 1rem;
-    }
+	.profile-card h3 {
+		font-size: 1rem;
+	}
 
-    .profile-card p {
-        font-size: .85rem;
-    }
+	.profile-card p {
+		font-size: .85rem;
+	}
 
-    /* ✅ Button grid layout */
-    .profile-btns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        width: 100%;
-        max-width: 300px;
-        margin-left: -10%;
-    }
+	/* ✅ Button grid layout */
+	.profile-btns {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		width: 100%;
+		max-width: 300px;
+		margin-left: -10%;
+	}
 
-    .profile-btns button,
-    .profile-btns .MuiButton-root {
-        width: 100%;
-        font-size: 12px;
-        padding: 2px;
-        margin-left: 5%;
-    }
+	.profile-btns button,
+	.profile-btns .MuiButton-root {
+		width: 100%;
+		font-size: 12px;
+		padding: 2px;
+		margin-left: 5%;
+	}
 
-    /* ✅ Last button spans full row */
-    .profile-btns button:last-child,
-    .profile-btns .MuiButton-root:last-child {
-        grid-column: 1 / -1;
-    }
+	/* ✅ Last button spans full row */
+	.profile-btns button:last-child,
+	.profile-btns .MuiButton-root:last-child {
+		grid-column: 1 / -1;
+	}
 
-    #upgrade-btn {
-        width: min-content;
-        margin: auto;
-    }
+	#upgrade-btn {
+		width: min-content;
+		margin: auto;
+	}
 }

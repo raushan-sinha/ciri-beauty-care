@@ -11,9 +11,9 @@ export default function SupplierAccount() {
             <div className="supplier-container">
                 <div className="supplier-box">
                     {/* Close Icon */}
-                    <button className="close-btn" onClick={() => window.history.back()}>
+                    {/* <button className="close-btn" onClick={() => window.history.back()}>
                         ✖
-                    </button>
+                    </button> */}
 
                     <h2>Create an Account for Supplier</h2>
                     <p className="subtitle">
