@@ -9,7 +9,7 @@
 
 .supplier-box {
     position: relative;
-    background: #000;
+    background-color: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -19,6 +19,10 @@
     flex-direction: column;
     gap: 20px;
     animation: fadeIn 0.3s ease-in-out;
+}
+
+#heading {
+    color: black;
 }
 
 .close-btn {
@@ -65,12 +69,8 @@
 }
 
 .form-group label {
-    font-size: 14px;
+    font-size: .95rem;
     color: #fff;
-    font-weight: 500;
-    text-align: left;
-    display: block;
-    width: 100%;
 }
 
 .form-group input,
@@ -111,10 +111,6 @@
 }
 
 @media (max-width: 480px) {
-    .supplier-container {
-        margin-top: 15%;
-    }
-
     .supplier-box h2 {
         font-size: 20px;
     }

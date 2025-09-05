@@ -7,7 +7,7 @@ export default function BrandsPayCard({ product, onClose }) {
     return (
         <div className="payment-overlay">
             <div className="payment-box">
-                <button id="close-btn" onClick={onClose}>✖</button>
+                <button className="close-btn" onClick={onClose}>✖</button>
                 <h2 className="payment-title">Complete Payment</h2>
 
                 {/* Product Details */}

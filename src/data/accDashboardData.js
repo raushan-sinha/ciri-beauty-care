@@ -46,7 +46,7 @@ export const accDashboard = {
         {
             title: 'Appointments & Services',
             para: 'A modern, responsive section to track user’s appointments & past services in the profile dashboard.',
-            src: '/appointment',
+            src: '/appointmentsServices',
             btn: 'Appointments & Services'
         }
     ]

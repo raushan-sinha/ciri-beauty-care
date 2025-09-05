@@ -15,7 +15,7 @@ export default function SupplierAccount() {
                         ✖
                     </button> */}
 
-                    <h2>Create an Account for Supplier</h2>
+                    <h2 id='heading'>Create an Account for Supplier</h2>
                     <p className="subtitle">
                         Register as a trusted supplier with CiriBeautyCare
                     </p>
@@ -24,7 +24,7 @@ export default function SupplierAccount() {
                         className="supplier-form"
                     >
                         <div className="form-group">
-                            <label htmlFor="company-name">Company Name</label>
+                            <label htmlFor="company-name" className='label'>Company Name</label>
                             <input
                                 type="text"
                                 id="company-name"

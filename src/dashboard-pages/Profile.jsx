@@ -79,10 +79,20 @@ export default function Profile() {
 
 				{showUpgrade && (
 					<div className="extra-box premium">
-						<button className="close-btn" onClick={() => setShowUpgrade(false)}>✖</button>
-						<h2>Upgrade to CiriBeautyCare Premium</h2>
-						<p>Get free shipping, exclusive discounts & early access to offers.</p>
-						<button className="btn">Upgrade Now</button>
+						<div>
+							<button className="close-btn" onClick={() => setShowUpgrade(false)}>✖</button>
+						</div>
+						<div>
+							<div>
+								<h2>Upgrade to CiriBeautyCare Premium</h2>
+							</div>
+							<div>
+								<p>Get free shipping, exclusive discounts & early access to offers.</p>
+							</div>
+							<div>
+								<button className="btn">Upgrade Now</button>
+							</div>
+						</div>
 					</div>
 				)}
 
