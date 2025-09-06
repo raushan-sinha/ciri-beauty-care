@@ -124,7 +124,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>{copyRight}</p>
+                {copyRight}
             </div>
         </footer>
     );
