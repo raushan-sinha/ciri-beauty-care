@@ -12,9 +12,8 @@ export default function HelpSupport() {
             <Navbar />
 
             <div className="help-support">
-                {/* ===== Header ===== */}
                 <header className="help-header">
-                    <h1>Supplier Help & Support</h1>
+                    <h1>User Help & Support</h1>
                     <p>
                         At <span>CiriBeautyCare</span>, your satisfaction is our top
                         priority. Choose the most convenient way to reach us whenever you

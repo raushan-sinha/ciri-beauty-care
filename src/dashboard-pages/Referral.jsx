@@ -29,7 +29,7 @@ export default function Referral() {
 
             <div className="referral-container">
                 <h1>Refer a Friend</h1>
-                <p>Invite your friends and earn rewards when they join!</p>
+                <p id='referral-para'>Invite your friends and earn rewards when they join!</p>
 
                 <div className="referral-box">
                     <div className="referral-code">

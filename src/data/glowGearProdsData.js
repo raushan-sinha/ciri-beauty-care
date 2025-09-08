@@ -1,6 +1,5 @@
 const glowGearProduct = [
     {
-        title: 'GlowGear Beauty Machines',
         products: [
             {
                 src: 'https://scontent.fpat2-7.fna.fbcdn.net/v/t1.15752-9/530689057_1160260389245421_8681899071375772272_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=mLDY4VOKDYMQ7kNvwHAt1Ij&_nc_oc=AdnDoNM3fHY9a9TK1SWqaeZV9V7InTR9yAYGy2VGXKI5GYlAiYVp6Hs9vJoOtTQqnS0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-7.fna&oh=03_Q7cD3AHVziH0nfS-PUpu4negoCeSri5iAXaxd4_D2eGLNcvGnQ&oe=68CCE6AB',

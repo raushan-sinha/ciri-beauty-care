@@ -8,9 +8,6 @@ import Footer from '../components/Footer';
 import MenPayCard from '../components/MenPayCard';
 
 export default function MenPage() {
-    //todo: Page Title
-    const title = 'Men Beauty Care';
-
     const [showPaymentBox, setShowPaymentBox] = useState(null)
 
     return (
@@ -18,7 +15,6 @@ export default function MenPage() {
             <Navbar />
 
             <section className="beauty-section">
-                <h1 className="page-title">{title}</h1>
                 <div className="beauty-grid">
                     {menProducts.map((product) => (
                         <div className="beauty-card" key={product.id}>

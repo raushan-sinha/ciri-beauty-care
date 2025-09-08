@@ -17,7 +17,6 @@ export default function GlowGear() {
             {
                 glowGearProduct.map((category, idx) => (
                     <div className="glowgear-page" key={idx}>
-                        <h2 className="page-title">{category.title}</h2>
                         <div className="products-grid">
                             {
                                 category.products.map((product, i) => (

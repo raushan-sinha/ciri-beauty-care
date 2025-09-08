@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import './BrandsPage.css';
+import './MenPage.css';
 import menProducts from '../data/menProductsData';
 import womenProducts from '../data/womenProductsData';
 import AddCartBtn from '../buttons/AddCartBtn';
@@ -9,12 +9,10 @@ import Footer from '../components/Footer';
 import BrandsPayCard from '../components/BrandsPayCard';
 
 export default function BrandsPage() {
-    const pageTitle = "All Brands for CiriBeautyCare";
-
-    // State for the currently selected product for payment
+    //todo: State for the currently selected product for payment
     const [showPaymentBox, setShowPaymentBox] = useState(null);
 
-    // Combine women and men products in a single array
+    //todo: Combine women and men products in a single array
     const allProducts = [...womenProducts, ...menProducts];
 
     return (
@@ -22,7 +20,6 @@ export default function BrandsPage() {
             <Navbar />
 
             <section className="beauty-section">
-                <h1 className="section-title">{pageTitle}</h1>
                 <div className="beauty-grid">
                     {allProducts.map((product, index) => (
                         <div className="beauty-card" key={`${product.id}-${index}`}>
