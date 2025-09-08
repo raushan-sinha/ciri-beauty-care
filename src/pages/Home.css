@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
     color: #333;
     text-align: center;
     gap: 2rem;
@@ -40,29 +40,17 @@
     }
 }
 
-.banner-title {
-    font: 700 3rem/1.2 "Poppins", Arial, sans-serif;
-    margin-bottom: 0.5rem;
-    color: #e61616;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: start;
-}
-
-.banner-title:hover {
-    transform: scale(1.05);
-    color: #ff6a00;
-}
-
 .banner-subtitle {
     font: 1.5rem/1.5 "Poppins", Arial, sans-serif;
     margin-bottom: 1.5rem;
     color: #0c0b0b;
+    text-align: start;
 }
 
 .offer-box {
     background: #fff;
     color: #ff6a00;
-    font: 1rem/1.5 "Poppins", Arial, sans-serif;
+    font: 1.3rem/1.5 "Poppins", Arial, sans-serif;
     padding: 1rem 2.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -111,7 +99,7 @@
     }
 
     .offer-box {
-        font-size: 0.9rem;
+        font-size: 1.2em;
     }
 
     .banner-images {
@@ -129,11 +117,11 @@
     }
 
     .banner-subtitle {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .offer-box {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin: auto;
     }
 
@@ -147,17 +135,14 @@
 }
 
 @media (max-width: 480px) {
-    .banner-title {
-        font-size: 1.8rem;
-    }
-
     .banner-subtitle {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     .offer-box {
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin: auto;
+        white-space: nowrap;
     }
 
     .banner-images {

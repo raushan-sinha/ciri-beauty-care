@@ -7,9 +7,8 @@ import OffersButton from '../buttons/OffersButton';
 export default function Home() {
     const bannerContent = [
         {
-            title: 'CiriBeautyCare',
-            subtitle: ' Men & Women Beauty Products with Exciting Offers!',
-            offerDate: '20th Aug to 30th Aug',
+            subtitle: ' Discover premium skincare, haircare, and grooming essentials crafted for men and women. At CiriBeautyCare, we blend quality, care, and innovation to help you look and feel your best every day.',
+            offerDate: '10th September to 30th September',
             offerTitle: 'Exciting Offers'
         }
     ];
@@ -75,10 +74,10 @@ export default function Home() {
     return (
         <>
             <Navbar />
+
             <div className="banner">
                 {bannerContent.map((content, idx) => (
                     <div className="banner-content" key={idx}>
-                        <h1 className="banner-title">{content.title}</h1>
                         <p className="banner-subtitle">{content.subtitle}</p>
                         <div className="offer-box">
                             <p>{content.offerDate}</p>
