@@ -1,0 +1,75 @@
+.offers-btn-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.offers-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff;
+    font: 600 18px/1.2 "Segoe UI", sans-serif;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    transition: all .3s ease;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+}
+
+.offers-btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+}
+
+.offer-icon {
+    font-size: 20px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(238, 9, 121, .5);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 18px rgba(255, 106, 0, .7);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(238, 9, 121, .5);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width:768px) {
+    .offers-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+        gap: 6px;
+    }
+
+    .offer-icon {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:480px) {
+    .offers-btn {
+        font-size: 15px;
+        padding: 8px 14px;
+        gap: 5px;
+    }
+
+    .offer-icon {
+        font-size: 16px;
+    }
+}

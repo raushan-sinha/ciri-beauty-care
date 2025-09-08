@@ -2,6 +2,7 @@ import './Home.css';
 import Navbar from '../components/Navbar';
 import homeProduct from '../data/homeProductsData';
 import Footer from '../components/Footer';
+import OffersButton from '../buttons/OffersButton';
 
 export default function Home() {
     const bannerContent = [
@@ -141,6 +142,8 @@ export default function Home() {
             </section>
 
             <Footer />
+
+            <OffersButton />
         </>
     );
 }

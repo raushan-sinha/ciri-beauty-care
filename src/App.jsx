@@ -26,6 +26,7 @@ import SubscriptionPage from "./dashboard-pages/SubscriptionPage";
 import Referral from "./dashboard-pages/Referral";
 import AppointmentsServices from "./dashboard-pages/AppointmentsServices";
 import AuthForm from "./authentication/AuthForm";
+import OffersPage from "./pages/OffersPage";
 
 export default function App() {
 	return (
@@ -58,7 +59,7 @@ export default function App() {
 					<Route path="/referral" element={<Referral />} />
 					<Route path="/appointmentsServices" element={<AppointmentsServices />} />
 					<Route path="/authform" element={<AuthForm />} />
-					
+					<Route path='/offersPage' element={<OffersPage />} />
 				</Routes>
 			</BrowserRouter>
 		</>
