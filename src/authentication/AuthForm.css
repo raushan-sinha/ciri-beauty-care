@@ -1,26 +1,13 @@
-/* General Page Container */
 .auth-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: linear-gradient(135deg, #f0f4f8, #d9e4ff);
     padding: 20px;
-    box-sizing: border-box;
 }
 
-/* Auth Container */
-.auth-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-/* Auth Box */
-.auth-box {
-    background: #ffffff;
-    padding: 2.5rem 2rem;
+.login-auth-box {
+    padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     width: 100%;
@@ -31,15 +18,13 @@
     transition: all 0.3s ease;
 }
 
-/* Title */
-.auth-box h2 {
+.login-auth-box h2 {
     font-size: 2rem;
     color: #4b2cc3;
-    margin-bottom: 1.8rem;
-    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
 }
 
-/* Form */
 .auth-form {
     width: 100%;
     display: flex;
@@ -47,7 +32,6 @@
     gap: 1rem;
 }
 
-/* Form Inputs */
 .form-group input {
     width: 100%;
     padding: 0.85rem 1rem;
@@ -63,8 +47,7 @@
     box-shadow: 0 0 6px rgba(75, 44, 195, 0.3);
 }
 
-/* Login Button */
-.submit-btn.login-btn {
+.submit-btn {
     width: 100%;
     padding: 0.95rem;
     background: #4b2cc3;
@@ -77,11 +60,10 @@
     transition: all 0.3s ease;
 }
 
-.submit-btn.login-btn:hover {
+.submit-btn:hover {
     background: #6c44d1;
 }
 
-/* Social Login Buttons */
 .social-auth {
     display: flex;
     gap: 1rem;
@@ -121,7 +103,6 @@
     background: #555;
 }
 
-/* Links */
 .auth-links {
     display: flex;
     flex-direction: column;
@@ -139,25 +120,15 @@
     color: #4b2cc3;
     font-weight: 600;
     text-decoration: none;
-    margin-left: 4px;
 }
 
 .auth-links a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .auth-box {
-        padding: 2rem 1.5rem;
-        max-width: 360px;
-    }
 
-    .auth-box h2 {
-        font-size: 1.8rem;
-    }
-
-    .submit-btn.login-btn {
+    .submit-btn {
         font-size: 1rem;
         padding: 0.85rem;
     }
@@ -169,22 +140,8 @@
 }
 
 @media (max-width: 480px) {
-    .auth-box {
-        padding: 1.8rem 1rem;
-        max-width: 100%;
-        border-radius: 16px;
-    }
 
-    .auth-box h2 {
-        font-size: 1.6rem;
-    }
-
-    .form-group input {
-        font-size: 0.95rem;
-        padding: 0.75rem;
-    }
-
-    .submit-btn.login-btn {
+    .submit-btn {
         font-size: 0.95rem;
         padding: 0.8rem;
     }
@@ -195,14 +152,8 @@
     }
 }
 
-/* Landscape adjustment */
-@media screen and (max-height: 500px) and (orientation: landscape) {
+@media screen and (max-width: 360px) {
     .auth-page {
         padding: 15px;
-    }
-
-    .auth-box {
-        max-width: 90%;
-        padding: 2rem 1.5rem;
     }
 }

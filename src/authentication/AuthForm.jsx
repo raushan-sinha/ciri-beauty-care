@@ -39,67 +39,57 @@ export default function AuthForm() {
         <>
             <Navbar />
             <div className="auth-page">
-                <div className="auth-container">
+                <div className="login-auth-box">
+                    <h2>Login</h2>
 
-                    {/* Auth Box */}
-                    <div className="auth-box">
-                        <h2>Login for CiriBeautyCare</h2>
-
-                        <form className="auth-form" onSubmit={handleLoginSubmit}>
-                            <div className="form-group">
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    autoComplete="email"
-                                    name='email'
-                                    id='email'
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <input
-                                    type="password"
-                                    placeholder="Password"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    autoComplete="current-password"
-                                    name='password'
-                                    id='password'
-                                />
-                            </div>
-
-                            <button type="submit" className="submit-btn login-btn">Login</button>
-                        </form>
-
-                        {/* Social Login */}
-                        <div className="social-auth">
-                            <button type="button" className="social-btn google-btn">
-                                <GoogleIcon fontSize="medium" />
-                            </button>
-                            <button type="button" className="social-btn apple-btn">
-                                <AppleIcon fontSize="medium" />
-                            </button>
+                    <form className="auth-form" onSubmit={handleLoginSubmit}>
+                        <div className="form-group">
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                autoComplete="email"
+                                name='email'
+                                id='email'
+                            />
                         </div>
 
-                        {/* Links */}
-                        <div className="auth-links">
-                            <span>
-                                <Link to="/forgotPass">Forgot Password?</Link>
-                            </span>
-                            <span className="signup-link">
-                                Don’t have an account? <Link to="/signup">Sign Up</Link>
-                            </span>
+                        <div className="form-group">
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                autoComplete="current-password"
+                                name='password'
+                                id='password'
+                            />
                         </div>
+
+                        <button type="submit" className="submit-btn">Login</button>
+                    </form>
+
+                    <div className="social-auth">
+                        <button type="button" className="social-btn google-btn">
+                            <GoogleIcon fontSize="medium" />
+                        </button>
+                        <button type="button" className="social-btn apple-btn">
+                            <AppleIcon fontSize="medium" />
+                        </button>
+                    </div>
+
+                    <div className="auth-links">
+                        <span>
+                            <Link to="/forgotPass">Forgot Password?</Link>
+                        </span>
+                        <span className="signup-link">
+                            Don’t have an account? <Link to="/signup">Sign Up</Link>
+                        </span>
                     </div>
                 </div>
 
-                {/* Alert Popup */}
-                <AlertPopup
-                    message={showAlertPopup}
-                    onClose={() => setShowAlertPopup("")}
-                />
+                <AlertPopup message={showAlertPopup} onClose={() => setShowAlertPopup("")} />
             </div>
             <Footer />
         </>

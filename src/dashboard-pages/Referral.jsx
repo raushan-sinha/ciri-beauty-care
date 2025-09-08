@@ -38,9 +38,9 @@ export default function Referral() {
                     </div>
 
                     <div className="share-buttons">
-                        <button onClick={() => handleShare('email')}>Share via Email</button>
-                        <button onClick={() => handleShare('whatsapp')}>Share via WhatsApp</button>
-                        <button onClick={() => handleShare('x')}>Share via X</button>
+                        <button className="social-button" onClick={() => handleShare('email')}>Share via Email</button>
+                        <button className="social-button" onClick={() => handleShare('whatsapp')}>Share via WhatsApp</button>
+                        <button className="social-button" onClick={() => handleShare('x')}>Share via X</button>
                     </div>
                 </div>
 
