@@ -69,7 +69,11 @@ export default function AuthForm() {
 
                         <button type="submit" className="login-btn" disabled={!email.trim() || !password.trim()}>Login</button>
                     </form>
-
+                    <br />
+                    <br />
+                    <div>
+                        <span>OR Login via</span>
+                    </div>
                     <div className="social-auth">
                         <button type="button" className="social-btn google-btn">
                             <GoogleIcon fontSize="medium" />

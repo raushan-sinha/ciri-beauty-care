@@ -40,7 +40,7 @@ export default function Profile() {
 			<div className="profile-page">
 				<div className="profile-header">
 					<div className="profile-pic">
-						<img src={profilePic} alt="User" />
+						<img src={profilePic || 'https://scontent.fpat3-1.fna.fbcdn.net/v/t1.15752-9/541962808_749684647966002_2128938170779904880_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=m9_WMDAb224Q7kNvwHmCJ-Y&_nc_oc=Adk0ysrtQvhw2TpA0bieBTU0OcfXfPLQG_DZSm3trLPu07m3Y7oZfxOURgKR1Snj3kD0a-ya316s1EQTKrShMaIG&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-1.fna&oh=03_Q7cD3QGIA8IO8SrctQwp6zSAnM4e7XBsfeKxRO8EqScxSt4E3w&oe=68E73097'} alt="User" />
 						<label className="upload-btn">
 							Change
 							<input type="file" accept="image/*" hidden onChange={handleImageChange} />
