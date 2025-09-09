@@ -1,6 +1,7 @@
 .btn-cart {
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
+    font-weight: 600;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -8,10 +9,10 @@
 }
 
 .btn-cart {
-    background: #ff69b4;
-    color: #fff;
+    background: #ffd814;
+    color: black;
 
     &:hover {
-        background: #ff4c99;
+        background: #f7ca00;
     }
 }

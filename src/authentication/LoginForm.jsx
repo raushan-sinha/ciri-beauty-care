@@ -61,7 +61,7 @@ export default function LoginForm({ onClose }) {
                             autoComplete="current-password"
                         />
                     </div>
-                    <button type="submit" className="login-btn">Login</button>
+                    <button type="submit" className="login-btn" disabled={!email.trim() || !password.trim()}>Login</button>
                 </form>
 
                 {/* Social Login */}

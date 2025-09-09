@@ -1,6 +1,7 @@
 .btn-shop {
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.93rem;
+    font-weight: 600;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -8,11 +9,10 @@
 }
 
 .btn-shop {
-    background: rgb(236, 213, 7);
+    background: #fa8900;
     color: #000;
 
     &:hover {
-        background: #101923;
-        color: #fff;
+        background: #e68a00;
     }
 }

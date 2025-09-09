@@ -67,7 +67,7 @@ export default function AuthForm() {
                             />
                         </div>
 
-                        <button type="submit" className="submit-btn">Login</button>
+                        <button type="submit" className="login-btn" disabled={!email.trim() || !password.trim()}>Login</button>
                     </form>
 
                     <div className="social-auth">
