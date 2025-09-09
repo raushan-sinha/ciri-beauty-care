@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import './Profile.css'
 import { accDashboard } from '../data/accDashboardData'
@@ -12,7 +12,27 @@ export default function Profile() {
 	const [showEdit, setShowEdit] = useState(false)
 	const [showUpgrade, setShowUpgrade] = useState(false)
 	const [showLogoutBox, setShowLogoutBox] = useState(false)
+	const [profilePic, setProfilePic] = useState(null)
 	const navigate = useNavigate();
+
+	//todo: Load Profile pic on load page
+	useEffect(() => {
+		const savedPic = localStorage.getItem('userPic');
+		if (savedPic) setProfilePic(savedPic);
+	}, [])
+
+	//todo: Handle file upload
+	const handleImageChange = (e) => {
+		const file = e.target.files[0];
+		if (file) {
+			const reader = new FileReader();
+			reader.onloadend = () => {
+				setProfilePic(reader.result);
+				localStorage.setItem("userPic", reader.result);
+			};
+			reader.readAsDataURL(file);
+		}
+	};
 
 	return (
 		<>
@@ -20,10 +40,10 @@ export default function Profile() {
 			<div className="profile-page">
 				<div className="profile-header">
 					<div className="profile-pic">
-						<img src="https://via.placeholder.com/120" alt="User" />
+						<img src={profilePic} alt="User" />
 						<label className="upload-btn">
 							Change
-							<input type="file" accept="image/*" hidden />
+							<input type="file" accept="image/*" hidden onChange={handleImageChange} />
 						</label>
 					</div>
 					<div className="profile-info">
