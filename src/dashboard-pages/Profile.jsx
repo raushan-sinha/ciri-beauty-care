@@ -56,21 +56,15 @@ export default function Profile() {
 						>
 							<ModeIcon />
 						</button>
-
-						{/* <label className="upload-btn" onClick={OpenUploadProfilePicPopUp}>
-							<ModeIcon />
-						</label> */}
 					</div>
 
 					<div className="profile-info">
 						<h1>John Doe</h1>
 						<p>johndoe@example.com</p>
 						<Stack direction="row" spacing={2} display="flex" flexWrap={"wrap"} gap={2} justifyContent="center">
-							<Button color="secondary" onClick={() => setShowEdit(true)}>
-								Edit Profile
-							</Button>
+							<Button variant="outlined">Edit Profile</Button>
 
-							<Button variant="contained" color="success" onClick={() => setShowUpgrade(true)}>
+							<Button variant="contained" onClick={() => setShowUpgrade(true)}>
 								Upgrade Account
 							</Button>
 							<Button variant="outlined" color="error" onClick={() => setShowLogoutBox(true)}>
@@ -127,17 +121,19 @@ export default function Profile() {
 				<div className="profile-grid">
 					{accDashboard.cardsInfo.map((card, idx) => (
 						<div className="profile-card" key={idx}>
-							<h3>
-								{card.title}
-							</h3>
+							<div>
+								<h3>{card.title}</h3>
+							</div>
 
-							<p>
-								{card.para}
-							</p>
+							<div>
+								<p>{card.para}</p>
+							</div>
 
-							<Link className="btn" to={card.src}>
-								{card.btn}
-							</Link>
+							<div>
+								<Link className="btn" to={card.src}>
+									{card.btn}
+								</Link>
+							</div>
 						</div>
 					))}
 				</div>
