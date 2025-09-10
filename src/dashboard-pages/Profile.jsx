@@ -62,7 +62,7 @@ export default function Profile() {
 						<h1>John Doe</h1>
 						<p>johndoe@example.com</p>
 						<Stack direction="row" spacing={2} display="flex" flexWrap={"wrap"} gap={2} justifyContent="center">
-							<Button variant="outlined">Profile</Button>
+							<Button variant="outlined">Edit Profile</Button>
 
 							<Button variant="contained" onClick={() => setShowUpgrade(true)}>
 								Upgrade Account
