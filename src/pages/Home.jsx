@@ -1,10 +1,25 @@
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Navbar from '../components/Navbar';
-import homeProduct from '../data/homeProductsData';
+import { homeProduct, bannerImages } from '../data/homeProductsData';
 import Footer from '../components/Footer';
 import OffersButton from '../buttons/OffersButton';
 
 export default function Home() {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    //todo: banner image slider -
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === bannerImages.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [bannerImages.length])
+
+
     const bannerContent = [
         {
             subtitle: ' Discover premium skincare, haircare, and grooming essentials crafted for men and women. At CiriBeautyCare, we blend quality, care, and innovation to help you look and feel your best every day.',
@@ -13,12 +28,12 @@ export default function Home() {
         }
     ];
 
-    const bannerImage = [
-        {
-            src: 'https://scontent.fpat3-3.fna.fbcdn.net/v/t1.15752-9/541388328_1355273596118388_2135508787897867849_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=K4hsWyrAHlIQ7kNvwETcFbc&_nc_oc=Admd6HaLfWngosgbNlhEC6enoA6VEF03QB2MlU-fe1szkMa8CI-6sguXgAHeimNu7VohR0oFvSh0bgcjVob_FOAV&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-3.fna&oh=03_Q7cD3QE37UPaHf1otgiXZbJ2NUAtf71fMQFNm1HA2o9TfL1WMw&oe=68E5DF1C',
-            alt: 'CiriBeautyCare Product Image'
-        }
-    ];
+    // const bannerImage = [
+    //     {
+    //         src: 'https://scontent.fpat3-3.fna.fbcdn.net/v/t1.15752-9/541388328_1355273596118388_2135508787897867849_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=K4hsWyrAHlIQ7kNvwETcFbc&_nc_oc=Admd6HaLfWngosgbNlhEC6enoA6VEF03QB2MlU-fe1szkMa8CI-6sguXgAHeimNu7VohR0oFvSh0bgcjVob_FOAV&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-3.fna&oh=03_Q7cD3QE37UPaHf1otgiXZbJ2NUAtf71fMQFNm1HA2o9TfL1WMw&oe=68E5DF1C',
+    //         alt: 'CiriBeautyCare Product Image'
+    //     }
+    // ];
 
     const featuredCategories = [
         {
@@ -86,11 +101,13 @@ export default function Home() {
                     </div>
                 ))}
                 <div className="banner-images">
-                    {bannerImage.map((item, idx) => (
-                        <div className="product" key={idx}>
-                            <img src={item.src} alt={item.alt} className="product-image" />
-                        </div>
-                    ))}
+                    <div className="product">
+                        <img
+                            src={bannerImages[currentIndex].src}
+                            alt={bannerImages[currentIndex].alt}
+                            className="product-image"
+                        />
+                    </div>
                 </div>
             </div>
 
