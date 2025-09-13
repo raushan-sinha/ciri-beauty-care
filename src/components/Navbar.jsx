@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -12,7 +12,14 @@ import "./Navbar.css";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
+    //todo: Redirect the Home page -
+    const goToHome = () => {
+        navigate('/')
+    }
+
+    //todo: Menu Screen Size -
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 768) setIsMenuOpen(false);
@@ -24,7 +31,7 @@ export default function Navbar() {
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-    // Nav links
+    //todo: Nav links
     const navLinks = [
         { href: "/", name: "Home" },
         { href: "/women", name: "Women" },
@@ -33,14 +40,14 @@ export default function Navbar() {
         { href: "/glowgear", name: "GlowGear" },
     ];
 
-    // Desktop Nav Icons with tooltips
+    //todo: Desktop Nav Icons with tooltips
     const desktopNavIcons = [
         { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account", link: "/authform" },
         { icon: <ShoppingCartIcon className="navLink-icon" fontSize="large" />, title: "Cart", link: "/cart" },
         { icon: <StorefrontSharpIcon className="navLink-icon" fontSize="large" />, title: "Supplier", link: "/supplier" }
     ];
 
-    // Phone Nav Icons
+    //todo: Phone Nav Icons
     const navLinkPhoneIcons = [
         { icon: <AccountCircleIcon className="navLink-icon" fontSize="large" />, title: "Account", link: "/authform" },
         { icon: <ShoppingCartIcon className="navLink-icon" fontSize="large" />, title: "Cart", link: "/cart" },
@@ -51,7 +58,7 @@ export default function Navbar() {
         <>
             <header className="navbar">
                 <div className="navbar-container">
-                    <div className="logo">Ciri-BeautyCare</div>
+                    <div className="logo" onClick={goToHome}>Ciri-BeautyCare</div>
 
                     {/* Desktop Nav Links */}
                     <nav className="nav-links desktop-nav">
