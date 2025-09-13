@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { homeProduct, bannerImages, bannerContent, featuredCategories, newArrivals } from '../data/homeProductsData';
 import Footer from '../components/Footer';
 import OffersButton from '../buttons/OffersButton';
+import NewsletterBox from '../components/NewsletterBox';
 
 export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -89,6 +90,9 @@ export default function Home() {
                     ))}
                 </div>
             </section>
+
+            {/* NewsLetterBox */}
+            <NewsletterBox />
 
             <Footer />
 
