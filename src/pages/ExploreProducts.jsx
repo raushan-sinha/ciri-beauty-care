@@ -24,7 +24,7 @@ export default function ExploreProducts() {
                             />
                         ))}
                     </div>
-                    <button className="explore-btn" onClick={() => navigateWomenPage('/women')}>Explore Women Beauty Products</button>
+                    <button className="explore-btn" onClick={() => navigate('/women')}>Explore Women Beauty Products</button>
                 </div>
 
                 {/* Men Beauty Products */}
