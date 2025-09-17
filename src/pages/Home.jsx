@@ -5,6 +5,7 @@ import { homeProduct, bannerImages, bannerContent, featuredCategories, newArriva
 import Footer from '../components/Footer';
 import OffersButton from '../buttons/OffersButton';
 import NewsletterBox from '../components/NewsletterBox';
+import ExploreProducts from './ExploreProducts';
 
 export default function Home() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -44,6 +45,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            {/* Explore Products */}
+            <ExploreProducts />
 
             {/* Featured Categories Section */}
             <section className="featured-section">

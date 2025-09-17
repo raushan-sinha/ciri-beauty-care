@@ -5,11 +5,11 @@ export const bannerImages = [
         alt: 'product-1'
     },
     {
-        src: 'https://scontent.fpat11-2.fna.fbcdn.net/v/t1.15752-9/545894263_729389193600355_1008086929562306916_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=5Lh-BZwXkxEQ7kNvwEXQpKo&_nc_oc=Adm56Na8WkhR1S33V7hmdOqRAtNDz-aUez1gIw-s6XPk_cRlBp5zLfpE8Kx-5IlERhN5Zk1zGxUkUyd_aUzlL9Bb&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-2.fna&oh=03_Q7cD3QGl2HH0dxLtbCjXYnrzyK4YCUVqRRwlpt-6UaotAirliw&oe=68EC9C3D',
+        src: 'https://scontent.fpat1-2.fna.fbcdn.net/v/t1.15752-9/545894263_729389193600355_1008086929562306916_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=tJ36VclbWoQQ7kNvwFIvIjU&_nc_oc=AdnhfH3tJ8sRhlsHhHl4odBr4grk8vjOpGHgjbpi9eubVnWWXOYbe7d83ro9e3dgw5o&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat1-2.fna&oh=03_Q7cD3QGJH7gWhiA-n2GX721sGGE5Hm8TPMh2Sn5TCwMd3KRwEA&oe=68F1013D',
         alt: 'product-2'
     },
     {
-        src: 'https://scontent.fpat11-3.fna.fbcdn.net/v/t1.15752-9/546882105_1174977024461542_5158243102155210273_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=WxgvsJg99uwQ7kNvwFEIMQy&_nc_oc=Admp4k1Xpf2r3pO_aLIiWk7Lli3mhL8N4yMa_s7-MNELYzd7hYQQyU8UaCeyH9YJs8Ts3x_gGWIA5WX2Xs7viBhc&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-3.fna&oh=03_Q7cD3QGlbOr6-1mcLklXXf26l7NOkTFRRcbDt2J_nlEB_iXeNA&oe=68ECB1C5',
+        src: 'https://scontent.fpat1-1.fna.fbcdn.net/v/t1.15752-9/546314007_820010077117307_5031338553712904825_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8Ub5ACBiRewQ7kNvwEsrVgU&_nc_oc=AdknGv-moxelz4lwfL_E-KEKKytDcNSjagTp-7BATIFbASgOb0QGdVvXUqxc9n7re2A&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat1-1.fna&oh=03_Q7cD3QEal9YJFYlAo7lXbgrgtIfDvdfcHDooP5Bqtk7fzGRf3g&oe=68F0F5A9',
         alt: 'product-3'
     },
     {
@@ -35,27 +35,27 @@ export const homeProduct = [
         title: "Beauty Care Products",
         products: [
             {
-                src: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/529309106_4057294854536441_8575214502151550755_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ZHi8ZOi1K3sQ7kNvwE2CYPs&_nc_oc=Adlj2SAdEYC8FeOKDA3nLlFEwG2-gmRPKk4ftGPSKj0Ejo-eEpEQFcHKagOBRZhbj4g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD3AEriAX5EJ8g7C3Jr-QAhsWbGLUAFxTJy_gbJyTKXyZvig&oe=68C7BDFE',
+                src: 'https://scontent.fpat11-3.fna.fbcdn.net/v/t1.15752-9/550439687_1951702258732517_2309997546034749544_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=2cNqr3pcibcQ7kNvwHk4DzB&_nc_oc=AdnrkwZs5naccBoTWP8A70ba_kXdMVyyS8ZSp7fNIvbWnFZuOCLtZ1lRSBjW36t3-AkYWCKQI1aN5wox1ymP-8td&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-3.fna&oh=03_Q7cD3QE8ebI-Ttk5KJVsDoF2Z1mvKmHtxNaM-51VErOsN3-QlQ&oe=68F1C4FA',
                 alt: 'product-1',
                 name: 'Hair Dryer'
             },
             {
-                src: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/530565064_4218175898507987_2640535089489766923_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=OCK4l0gfiCcQ7kNvwEaS164&_nc_oc=AdlUWy1mNK2GQ34XNTyAHTXguW45UlDn1P4_6iprShvg9qrN_yJb2EnmPbmgxdtb0ug&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD3AENvs8_rP2SM0PTzQp3heOXaMUsKoBGPHxBGy2ZpLjpbg&oe=68C7BC60',
+                src: 'https://scontent.fpat11-2.fna.fbcdn.net/v/t1.15752-9/550282655_1873142266879019_6930854764161571883_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=O6JrAlvea2wQ7kNvwFYQPpS&_nc_oc=AdnDOHrzwZz3HL39eSF07NEmk5Fd1kJxVAoHtdWDOuPa4caqApV3sAWnGdm1PXtqd1gJuG0Ot0BsWZepxjnXZbJS&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-2.fna&oh=03_Q7cD3QFeo4pdhNeMtnNfFvzRvo7Awe0btzbCiFcg_JCXBquzug&oe=68F1F86C',
                 alt: 'product-2',
                 name: 'Face Wash'
             },
             {
-                src: 'https://scontent.fpat2-1.fna.fbcdn.net/v/t1.15752-9/530210261_760793356670722_1503239988339937436_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ylBVqNz-8JkQ7kNvwGC7YyF&_nc_oc=AdlDOrITsilaWlNI1uFREUeLUopJniYLlBmd9DP9EO79TL8uhmGyFTvEvLKa7S7s_wA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&oh=03_Q7cD3AEfOYckQP2vomGAlpxnmyKeowFZbyoESBKcW12vouBafA&oe=68C7C3D7',
+                src: 'https://scontent.fpat11-2.fna.fbcdn.net/v/t1.15752-9/548924779_1277129890357609_3436886402796833847_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xTidoUWvhMcQ7kNvwGpJnQL&_nc_oc=Adly0ToETgYLukcjHjtl_RSneRVWo2Gd-cFbtxB4Q8a_G94fAHADHwxEXVDp93wqvHR0xFMsMkaYP3J587f8GrQO&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-2.fna&oh=03_Q7cD3QEMiwwpKBbqyB2rWdRHh2Ur3ZKtMq6h52TQNGnNX3dxxA&oe=68F1CEF3',
                 alt: 'product-3',
                 name: 'Streax Serum'
             },
             {
-                src: 'https://scontent.fpat2-5.fna.fbcdn.net/v/t1.15752-9/528911252_1969290867221032_4277744370339070791_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=VUcEWchEzegQ7kNvwHTbLcD&_nc_oc=AdnmUvz_P2wP60obRo7e6OVIcwIo8oUGpQpmZzSFBQ_jsCudl9aaEnYEA2_rzXLuOVg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-5.fna&oh=03_Q7cD3AFDC_x3n-VJSs5m6431bTB-raQDaBeM4FGDelH_yShHdQ&oe=68C7E5C4',
+                src: 'https://scontent.fpat11-3.fna.fbcdn.net/v/t1.15752-9/548192488_2469075733463925_2037732039414914421_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=-a4-8KfQUEYQ7kNvwFIbnx2&_nc_oc=AdkTvP-xoYyJJRFC7I7wpK43K1I86wVCEeFa05KCY8rAYWqBZDBh7OLj9WpYQCxeRYIGJpreuj1HWTncwygrLn_l&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-3.fna&oh=03_Q7cD3QEfskRglIStSuYG0CU1G9iazljB3TiuJvnviJt6FfEFhg&oe=68F1E02D',
                 alt: 'product-4',
                 name: 'Nivea Body Lotion'
             },
             {
-                src: 'https://scontent.fpat2-5.fna.fbcdn.net/v/t1.15752-9/530482942_728540376846757_363502725759222297_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xu0X2fHGNYwQ7kNvwGi6M1G&_nc_oc=Adl5x3CVVMsXM3WmQmdgDT1NVpju9_gMoFLPPu-WgC7W1xXsJpaYdijoGbgSErjTzc4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-5.fna&oh=03_Q7cD3AH5wH61c7cIciIxFfQA_lwiVhtb8lOBnX_AZq70-ipKlg&oe=68C7EA0E',
+                src: 'https://scontent.fpat11-1.fna.fbcdn.net/v/t1.15752-9/550631428_3806510629647539_2338184178871063044_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vTk4BOdpGzAQ7kNvwH5uY1H&_nc_oc=AdmmKg8aWUSrP5EBSQw6qJT3TaJlPikfShJFTu6mDoJv5bYShiNFytoSesML6GXiSGa8Bhu9D-L9fCGs5EdKlJSS&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-1.fna&oh=03_Q7cD3QG6wtXUkRZ9AdhCYLCAFXt4LWn_p2KqsFr0eW-NWc30MA&oe=68F1DB84',
                 alt: 'product-5',
                 name: 'Lakme Sunscreen'
             },

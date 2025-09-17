@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    background: #ff88dc;
     color: #333;
     text-align: center;
     gap: 2rem;
@@ -48,8 +48,8 @@
 }
 
 .offer-box {
-    background: #fff;
-    color: #ff6a00;
+    background: #fcb920;
+    color: #101923;
     font: 1.3rem/1.5 "Poppins", Arial, sans-serif;
     padding: 1rem 2.5rem;
     border-radius: 10px;
