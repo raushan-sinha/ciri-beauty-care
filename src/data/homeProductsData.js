@@ -13,7 +13,7 @@ export const bannerImages = [
         alt: 'product-3'
     },
     {
-        src: 'https://scontent.fpat2-1.fna.fbcdn.net/v/t1.15752-9/530210261_760793356670722_1503239988339937436_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ylBVqNz-8JkQ7kNvwGC7YyF&_nc_oc=AdlDOrITsilaWlNI1uFREUeLUopJniYLlBmd9DP9EO79TL8uhmGyFTvEvLKa7S7s_wA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&oh=03_Q7cD3AEfOYckQP2vomGAlpxnmyKeowFZbyoESBKcW12vouBafA&oe=68C7C3D7',
+        src: 'https://scontent.fpat11-2.fna.fbcdn.net/v/t1.15752-9/549789412_1465797314541585_297082354652022745_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=s9XPzlhza74Q7kNvwHsZe94&_nc_oc=AdksNjBDc1qeoDWO5qj_Bh08Nzrmu_hZQIT9nS8m3vzmOfVbKSfXDc7xcqP02RGqm9boAsNJPGSvWGkt-LHFF-zi&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat11-2.fna&oh=03_Q7cD3QHnqZFir3Otpf6TsK-78cDzIB0JcB8PP_VorRAXSLsRoQ&oe=68F1D2B3',
         alt: 'product-4'
     }
 ];

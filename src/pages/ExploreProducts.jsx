@@ -1,8 +1,11 @@
 import React from "react";
 import "./ExploreProducts.css";
 import { exploreData } from "../data/exploresData";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ExploreProducts() {
+    const navigate = useNavigate();
+
     return (
         <section className="explore-section">
             <h2 className="explore-heading">Exploring Products in CiriBeautyCare</h2>
@@ -21,7 +24,7 @@ export default function ExploreProducts() {
                             />
                         ))}
                     </div>
-                    <button className="explore-btn">Explore Women Beauty Products</button>
+                    <button className="explore-btn" onClick={() => navigateWomenPage('/women')}>Explore Women Beauty Products</button>
                 </div>
 
                 {/* Men Beauty Products */}
@@ -37,7 +40,7 @@ export default function ExploreProducts() {
                             />
                         ))}
                     </div>
-                    <button className="explore-btn">Explore Men Beauty Products</button>
+                    <button className="explore-btn" onClick={() => navigate('/men')}>Explore Men Beauty Products</button>
                 </div>
             </div>
         </section>
