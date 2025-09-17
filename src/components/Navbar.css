@@ -42,6 +42,9 @@
 
 .nav-links a:hover {
     color: #e91e63;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
 }
 
 .search-bar {

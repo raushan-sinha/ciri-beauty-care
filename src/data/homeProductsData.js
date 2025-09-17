@@ -23,7 +23,7 @@ export const bannerImages = [
 export const bannerContent = [
     {
         subtitle: ' Discover premium skincare, haircare, and grooming essentials crafted for men and women. At CiriBeautyCare, we blend quality, care, and innovation to help you look and feel your best every day.',
-        offerDate: '10th September to 30th September',
+        offerDate: '20th September to 30th September',
         offerTitle: 'Exciting Offers'
     }
 ];
