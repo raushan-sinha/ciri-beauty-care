@@ -109,26 +109,26 @@ export const newArrivals = [
     {
         name: 'HydraGlow Vitamin C Serum',
         desc: 'Lightweight serum enriched with Vitamin C & Hyaluronic Acid for brighter, youthful skin.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541689061_1283218319560348_1844250555994233386_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MyXmVh7xSwkQ7kNvwEQHgbh&_nc_oc=AdnrV4lCN0e-8bOotE6wkIwQ5LTpfvycJY4hHmIWCoHCNBBYXLmq5sscS2w6A8bTYsD920-vWf0dFwir4JTiEPSo&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QG-HPwUuTAhG0ee2GChrenYx125NY_3ZzA8qzszZAfGfg&oe=68E5F665',
+        img: 'https://scontent.fpat2-8.fna.fbcdn.net/v/t1.15752-9/589901000_772269602531269_1959341761451962673_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Y673Z9yMsmgQ7kNvwFa7BHk&_nc_oc=Adn4LBi1bTyAwM5wUIkndxQFMLo9WE09Tw2q2JcJlraLTJ4wAQB84B6I39D803j7ac0&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-8.fna&oh=03_Q7cD4AEAn7-ZvQOIeS0ZiwqK1hhogvDcoVoTZ6r8shq_xtOqOA&oe=6954FC03',
     },
     {
         name: 'Keratin Repair Shampoo + Conditioner Duo',
         desc: 'Strengthens weak strands, reduces frizz & restores natural shine.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541635327_960046446276593_8688256309199940331_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=hnaA-wBxOWQQ7kNvwHYtE0H&_nc_oc=AdmXZgC2z8wpV6J1qeiROmTYXzrKtCNaWSaH6RYMCMeT3zXIu6ttO8bJElMkUH9jf9dLkkgiYQLipHok87FydRIg&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QHy84EOfPGD8UZnN-ul_J2e38fkXv1DMsIDOpD1liFgeg&oe=68E60799',
+        img: 'https://scontent.fpat2-8.fna.fbcdn.net/v/t1.15752-9/582444643_1216729747002723_2234735274264772788_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=87m63kKRKcsQ7kNvwEiQGqh&_nc_oc=AdkeiY1-2r3cmJwv1UemT4qsGp1wKLgqbMXP9xooAajUkRoCLwADge0BYQDHjkgw4t0&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-8.fna&oh=03_Q7cD4AE1Uae_e5eIbUJH7PiIXXDUzcZRACjc9pb1z6vRfJW0vA&oe=6954F1CA',
     },
     {
         name: 'Velour Mist Eau De Perfume',
         desc: 'A fresh floral blend with vanilla & musk undertones, designed for long-lasting freshness.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541781942_482353271640187_5606627369736667854_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=iY6rwI4rc-cQ7kNvwF1BdKZ&_nc_oc=AdmuyxyLMXRmmui2SVDB6v-zPt7ZuONyMFz3Edh-CMkc6H4K-x6Ih3pSuDqh2FfTJgth0OYncEVFPrVWhNiwXf05&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QETlc-fETKsZV0Pnj-Rn761_Kq1npL0wHeNGW6VwR9YIQ&oe=68E603A1',
+        img: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/588759630_687965357500796_81588889063852986_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fGWsDfQUWFcQ7kNvwGos0V0&_nc_oc=AdmFkgHlThW1UQpKDJ5ZVZPCFFVvnwc5BdQbXEwnZicOxo-n45l-N7Wb0vlu3XbFAxo&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD4AGO0hZHuVJ1lD82z3edNO76T31Pthq63tCYa2d7kj9kAg&oe=6954F6F4',
     },
     {
         name: 'Matte Luxe Lipstick – Bold Collection',
         desc: 'Ultra-pigmented, long-wear matte shades designed to suit all skin tones.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541536315_9948724458561428_6828235365030098345_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=4_cwkd599jcQ7kNvwHAlOyL&_nc_oc=AdnDsgLZCFCQqqP6EfHlc6fN-DEQlSW6VbTOqrdtiHggSUKRTeo3nOkex99NTevNNpcQsEejPvVBTIJrPRmWva37&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QH9JeSaIG7r9dVUYTMxmoJhknNJ6TJUTgp6wCGfKkYjiQ&oe=68E5E2AD',
+        img: 'https://scontent.fpat2-1.fna.fbcdn.net/v/t1.15752-9/582395568_1937936133819357_3357486620566859455_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=9bAHnU8vYkUQ7kNvwH-8QsG&_nc_oc=AdkvBksFJZSuWMyUzrCg7IwWoxR04lJNQLpZmqy8AaXG6ARLEuCF5ZqORybhT5mRK6k&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-1.fna&oh=03_Q7cD4AGyqHROHC7irotJjTKlqmj5VjsAM1UNys-_WdCk-LuX9w&oe=6954E482',
     },
     {
         name: 'Active Charcoal Face Wash',
         desc: 'Deep cleansing formula that removes dirt & excess oil without drying the skin.',
-        img: 'https://scontent.fpat3-3.fna.fbcdn.net/v/t1.15752-9/545801279_1490911105193976_3114747039134521187_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=RC-FMsZMDw0Q7kNvwHBV-S_&_nc_oc=Adk1qcmJWmh31IeeADML4QxucoxKcEabN0B7ebUADOBi5WhVrX6O547U_-96SnmXn-Q1tzSq9ITATSFvuRM-ldZN&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-3.fna&oh=03_Q7cD3QGVDQgC_6Jjcm4Iu_fz6CTmSj80u8mVuGjW1XMC-BaZDg&oe=68E5ECFA',
+        img: 'https://scontent.fpat2-3.fna.fbcdn.net/v/t1.15752-9/579557940_862926552934153_1129473944043988404_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=HIUo5vW6JtgQ7kNvwGN9vzk&_nc_oc=AdkUyK6hPOAu2YWKqQNeC1RRI88qDTLY-jKW-8wxmc0spoc0KUmz8gD7qRkrNCoWDFY&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-3.fna&oh=03_Q7cD4AHjk_2hoeKO72GgdU6wK8kswvGAuzrYL8wuL_q6eJXb7A&oe=6954E6A0',
     }
 ];
