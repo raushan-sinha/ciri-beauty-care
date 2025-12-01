@@ -84,22 +84,22 @@ export const featuredCategories = [
     {
         name: 'Skincare Essentials',
         desc: 'Nourishing creams, serums & face masks for radiant skin.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541447556_1063047035695165_8464856618300657157_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MnOdLgtEzn8Q7kNvwGL0-ZY&_nc_oc=Adle-fyyKckzk3TlJkgkbNUt0T9YtgjpwHSNTrtUvGGWUyC6N2DuAzyeP6kpAZ-QKV3Ftf4w3D1MXDS4FS5FGOgH&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QHl0d0QtAvWSiBp5-B8WE93and9czo4vcrjN3hj-EoyUQ&oe=68E5F2C1',
+        img: 'https://scontent.fpat2-3.fna.fbcdn.net/v/t1.15752-9/582062635_1097511475656984_7916458062096755989_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=OtpEYHeugsMQ7kNvwGUW-9y&_nc_oc=Adkhg7Qctczj6GnBebGX-5w3T69CqhwjQbvs9DeqU5ldsQ2yJ51FLREeKOqR0ABD--g&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-3.fna&oh=03_Q7cD4AFiFif3EB_MV5iz2P1pbYq7qYkWGThb8QhcBtN1Q7VLUg&oe=6954F9C1',
     },
     {
         name: 'Haircare & Styling',
         desc: 'Shampoos, conditioners & oils for strong and silky hair.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541521089_3712994628995889_3471516782934185624_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=OWUK54UKNI4Q7kNvwFk5cUF&_nc_oc=Adlvvqo7wLb8mqypclMG-RqlPg6DDSyycC18SiQViYXcDfnfgeD-pNZG7Jv6llmDqFTM5TwQ8Zjr7OT9AoZoQ8QF&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QF9yAROftkt6TLcyfTwiRr2_TFKz6NmZ8PPJIzb7R3FvQ&oe=68E5D62B',
+        img: 'https://scontent.fpat2-8.fna.fbcdn.net/v/t1.15752-9/590989236_853695807512204_8780760779664806965_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=_2W_MX3iqrgQ7kNvwEY0d0c&_nc_oc=AdlRzTEuMkTO0_2FFUQ-KVmMUUxQ4j1ASqmDj0I0uXU_Ff1IdTD5WfvZQ8LvUFyznw8&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-8.fna&oh=03_Q7cD4AHdnifRLkD5rMKTuVwNSKGKz9HOsNMecSMlkQXVmJ2PZQ&oe=6954E36C',
     },
     {
         name: 'Fragrances',
         desc: 'Luxury perfumes & deodorants that last all day.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541591677_2150851732104143_2606869284294393139_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fvH9CVzFM3IQ7kNvwGWpCOm&_nc_oc=Adn7SEW0yj0SZP2wJChxJ4xhMNsr7cbSakRLag2D238hrfzR5-iSrAp4sN3QVqtQckaqrUUDGmBX731iSef49DYY&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QHE_Ph_SYw1KFWloN3gNc3A1EAny1n4z4B7MFKcya34eA&oe=68E60102',
+        img: 'https://scontent.fpat2-7.fna.fbcdn.net/v/t1.15752-9/590130295_1156405176215724_2783288821768525252_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=FmbEZalF0ZUQ7kNvwHk3RKK&_nc_oc=AdlZp270Ok85dmHYfG4N3PEyDZpYXRgPykpSSzqvRIrSNJoh2QKu9VJpAnZlX-4OI3I&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-7.fna&oh=03_Q7cD4AGvdQ9jh_4Q4N09rbmT1fb_b-m5NkDo2TVYBRlnpaOZxw&oe=6954C612',
     },
     {
         name: 'Makeup & Beauty',
         desc: 'Lipsticks, eyeliners & more to highlight your style.',
-        img: 'https://scontent.fpat3-2.fna.fbcdn.net/v/t1.15752-9/541807853_800287839003060_3248875974636484945_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=5z3FGmgirxYQ7kNvwGMQEse&_nc_oc=AdmS9m1MAG3Ys42k2Rnr580MkeSnuqn-nOyh2PIwzGonSGVT7G3c0fgkC2oHuc3UltPHbWgVYewD7J-QeD_plWZO&_nc_ad=z-m&_nc_cid=2034&_nc_zt=23&_nc_ht=scontent.fpat3-2.fna&oh=03_Q7cD3QEvThMKfoxpJ_hU822on6qTYkF3RvVF0au5eJ2b54qFfg&oe=68E5DD06',
+        img: 'https://scontent.fpat2-2.fna.fbcdn.net/v/t1.15752-9/566642050_1175183700818978_8194881320203658042_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=9GJ53tjcB6cQ7kNvwHQhl3h&_nc_oc=Admu9oLPfsGEzN0H0uJZ07ihf8qBfWfuw7-yL39DvjZP83Ko-CNmY77VbflP6WdFSkQ&_nc_ad=z-m&_nc_cid=1174&_nc_zt=23&_nc_ht=scontent.fpat2-2.fna&oh=03_Q7cD4AHBwQmpvQNirBmhZ9U8m3P8id8kB1C9EoLiquGCE7SftA&oe=6954CE5D',
     }
 ];
 
