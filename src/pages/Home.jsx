@@ -53,11 +53,11 @@ export default function Home() {
             <section className="featured-section">
                 <h2 className="featured-title">Featured Categories</h2>
                 <div className="featured-grid">
-                    {featuredCategories.map((cat, idx) => (
+                    {featuredCategories.map((cart, idx) => (
                         <div className="featured-card" key={idx}>
-                            <img src={cat.img} alt={cat.name} className="featured-img" />
-                            <h3 className="featured-name">{cat.name}</h3>
-                            <p className="featured-desc">{cat.desc}</p>
+                            <img src={cart.img} alt={cart.name} className="featured-img" />
+                            <h3 className="featured-name">{cart.name}</h3>
+                            <p className="featured-desc">{cart.desc}</p>
                         </div>
                     ))}
                 </div>
